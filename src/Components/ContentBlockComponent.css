@@ -1,0 +1,35 @@
+#contentBlock {
+    gap: 15px;
+    height: 50%;
+}
+
+#contentBlock > * {
+    margin: 0;
+}
+
+#contentBlock > * > p {
+    margin-top: 0;
+}
+
+#lessonAndSubheading {
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    gap: 15px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#lessonAndSubheading > h1 {
+    font-size: 20px;
+}
+
+#lessonAndSubheading > h2 {
+    color: cadetblue;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+}

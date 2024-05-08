@@ -1,0 +1,23 @@
+#progressBarContainer {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 40%;
+    bottom: 0;
+    margin-bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+}
+
+.progressBar {
+    flex-grow: 1;
+}
+
+#progressBarContainer > a {
+    color: black;
+}
+
+#progressBarContainer > a > * {
+    font-size: 50px;
+}
