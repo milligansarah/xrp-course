@@ -10,7 +10,7 @@ const data: CourseData = {
     'Introduction': {
       0: {
         actionType: ActionType.Read,
-        content: <p>Welcome to learning programming with the Romi robot! In this course, you’ll learn how to program robots for fun or for competition, and how to write software, which you’ll be able to do for robots, and for other uses as well. This course assumes no prior experience of writing software. If you have some prior experience and know the basics, you will still find value in this course as it relates to programming robots and the Romi in particular. If you’re familiar with FIRST Robotics and want to learn how to program robots that compete in FIRST competitions, this is the perfect course for you. By the time you finish this course you’ll have built up skills to contribute to any team you’re a part of and created a foundation for yourself for future learning, leading you on a path to becoming an expert software developer. In this first lesson, we’ll focus on setting up the Romi and making it move.</p>
+        content: <p>Welcome to learning programming with the XRP robot! In this course, you’ll learn how to program robots for fun or for competition, and how to write software, which you’ll be able to do for robots, and for other uses as well. This course assumes no prior experience of writing software. If you have some prior experience and know the basics, you will still find value in this course as it relates to programming robots and the XRP in particular. If you’re familiar with FIRST Robotics and want to learn how to program robots that compete in FIRST competitions, this is the perfect course for you. By the time you finish this course you’ll have built up skills to contribute to any team you’re a part of and created a foundation for yourself for future learning, leading you on a path to becoming an expert software developer. In this first lesson, we’ll focus on setting up the XRP and making it move.</p>
       },
       1: {
         actionType: ActionType.Read,
@@ -24,11 +24,11 @@ const data: CourseData = {
       },
       3: {
         actionType: ActionType.Read,
-        content: <p><strong>A Romi robot</strong> (of course). You do NOT need the arm attachment.</p>
+        content: <p><strong>A XRP robot</strong> (of course)</p>
       },
       4: {
         actionType: ActionType.Read,
-        content: <p><strong>The data USB cable that comes with the Romi kit.</strong> It’s important to use this specific cable, as some USB cables are for power only and will NOT work. </p>
+        content: <p><strong>The data USB cable that comes with the XRP kit.</strong> It’s important to use this specific cable, as some USB cables are for power only and will NOT work. </p>
       },
       5: {
         actionType: ActionType.Read,
@@ -36,267 +36,255 @@ const data: CourseData = {
       },
       6: {
         actionType: ActionType.Read,
-        content: <p><strong>A supply of AA batteries.</strong> You will likely want rechargeable batteries because you will go through a lot of batteries in this course, and it will be expensive and wasteful if you can’t recharge them. The Romi uses six batteries at once and a full charge will last up to a few hours under normal use where you spend more time writing code than driving but can run out faster than that if you spend a lot of time driving. The Romi comes with six batteries, so you can get started on the first couple lesson with those batteries while waiting for a rechargeable kit to kit to arrive, if you purchase a kit online.</p>
+        content: <p><strong>A supply of AA batteries.</strong> You will likely want rechargeable batteries because you will go through a lot of batteries in this course, and it will be expensive and wasteful if you can’t recharge them. The XRP uses two batteries at once and a full charge will last up to a few hours under normal use where you spend more time writing code than driving but can run out faster than that if you spend a lot of time driving. The XRP comes with two batteries, so you can get started on the first couple lesson with those batteries while waiting for a rechargeable kit to kit to arrive, if you purchase a kit online.</p>
       },
       7: {
         actionType: ActionType.Read,
-        content: <p><strong>A computer with wireless internet access.</strong> If you have a computer without wireless access, you can buy a wireless adapter for less than $20. You need wireless internet to connect to the Romi to deploy code and drive.</p>
+        content: <p><strong>A computer with wireless internet access.</strong> If you have a computer without wireless access, you can buy a wireless adapter for less than $20. You need wireless internet to connect to the XRP to deploy code and drive.</p>
       },
       8: {
         actionType: ActionType.Read,
-        content: <p><strong>A computer with a wired (ethernet) internet port, and an ethernet cable.</strong> This can be the same computer as the one with wireless, or a different one. You will need to plug an ethernet cable from your computer directly into the Romi during setup, but do not need to access the internet with a wired connection at any point. If your computer doesn’t have an ethernet port, you can use an ethernet USB pigtail to plug an ethernet cable into a USB port instead. (You can search Amazon for “ethernet USB pigtail” if you need to purchase one – they’re typically $10-20).</p>
+        content: <p><strong>An internet connection.</strong> In addition to connecting to the XRP, this course has links to external materials you’ll need to access. In this lesson, you’ll need to download two files which are each about a gigabyte, which can take a few minutes on slower connections. These are the only large  downloads in the course.</p>
       },
+    },
+    'Setting Up Your XRP': {
       9: {
         actionType: ActionType.Read,
-        content: <p><strong>An internet connection.</strong> In addition to connecting to the Romi, this course has links to external materials you’ll need to access. In this lesson, you’ll need to download two files which are each about a gigabyte, which can take a few minutes on slower connections. These are the only large  downloads in the course.</p>
-      },
-      10: {
-        actionType: ActionType.Read,
-        content: <p><strong>An SD card reader/writer.</strong> The Romi comes with an SD card and you will need to install firmware on this card before your robot will work. If you’re using a laptop, there’s a good chance it already has a slot for SD cards.</p>
-      },
-    },
-    'Setting Up Your Romi': {
-      11: {
-        actionType: ActionType.Read,
-        content: <p>There are two main steps in getting started, both of which are explained in detail below: installing VSCode with the WPILib library, and installing firmware onto your Romi. If you know that one or both of these steps have been done for you already, you can skip that step accordingly. If you aren’t sure, then do not skip the step.</p>
+        content: <p>There are two main steps in getting started, both of which are explained in detail below: installing VSCode with the WPILib library, and installing firmware onto your XRP. If you know that one or both of these steps have been done for you already, you can skip that step accordingly. If you aren’t sure, then do not skip the step.</p>
       }
     },
-    'Turning your Romi On and Off & the Low Battery Signal': {
-      12: {
+    'Turning your XRP On and Off': {
+      10: {
         actionType: ActionType.Robot,
         image: <img src='./images/lesson1_12.png' />,
-        content: <p>The Romi has two power switches – one is a switch, and one is just a button. To turn it on, you simply have to flip the switch to the “On” position. But to turn it off, you have to flip the switch to “Off” and then push the power button. If you don’t do this, the Romi will remain on and eventually drain its batteries, so make sure you fully turn it off whenever you’re not using it.</p>
+        content: <p>The XRP has a single power switch, as shown in the image below (sourced from <a href="https://docs.wpilib.org/en/stable/docs/xrp-robot/hardware-and-imaging.html">WPILib</a>). To turn it on, you simply have to flip the switch to the “on” position and flip it to the "off" position to turn it off. Remember to turn off your XRP when you're not using it to avoid draining the batteries.</p>
       },
-      13: {
-        actionType: ActionType.Read,
-        content: <p>When the Romi is low on batteries, it will start playing noises. If you hear it playing noises (you’ll know it when you hear it, it’s loud and annoying), that means the batteries are low and need to be changed. Change them right away as it will stop functioning correctly if you don’t.</p>
-      }
     },
     'Video Tutorial': {
-      14: {
+      13: {
         actionType: ActionType.Read,
-        content: <p>If you prefer videos over text instruction, you can follow this link to see a video of how to set up a Romi. If you prefer to follow a list of steps, or are unclear about any part of the video, you can follow the text steps outlined below. Video: <a href='https://www.youtube.com/watch?v=mop51tpWWcA' target='_blank'>https://www.youtube.com/watch?v=mop51tpWWcA</a></p>
+        content: <p>If you prefer videos over text instruction, you can follow this link to see a video of how to set up a XRP. If you prefer to follow a list of steps, or are unclear about any part of the video, you can follow the text steps outlined below. Video: <a href='https://www.youtube.com/watch?v=mop51tpWWcA' target='_blank'>https://www.youtube.com/watch?v=mop51tpWWcA</a></p>
       }
     },
     'Step 1 – Installing VSCode and the WPILib': {
-      15: {
+      14: {
         actionType: ActionType.Read,
-        content: <p>Programming the Romi is done using a library known as “WPILib”. WPILib is built into an installation of an application called “VSCode”, which is what you will use to write and deploy code to the Romi. There is documentation for the WPILib which includes guides on how to get started. To begin, follow the guide linked in the next screen to download VSCode. Note that the VSCode download and the Romi images are 1-2 gigabytes each and may take a few minutes to download.</p>
+        content: <p>Programming the XRP is done using a library known as “WPILib”. WPILib is built into an installation of an application called “VSCode”, which is what you will use to write and deploy code to the XRP. There is documentation for the WPILib which includes guides on how to get started. To begin, follow the guide linked in the next screen to download VSCode. Note that the VSCode download and the XRP images are 1-2 gigabytes each and may take a few minutes to download.</p>
       },
-      16: {
+      15: {
         actionType: ActionType.Code,
         content: <p>1. Start by opening this link: <a href='https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilibsetup.html' target='_blank'>https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilibsetup.html</a> You’ll be using Java.</p>
       },
-      17: {
+      16: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson1_17.png' />,
         content: <p>2. There will be a link to GitHub which you need to follow:</p>
       },
-      18: {
+      17: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson1_18.png' />,
         content: <p>3. Once on GitHub, the actual downloads are at the bottom of the page; you’ll need to select the proper one based on which operating system you’re using (Windows, Mac, or Linux) and whether your system is 32-bit or 64-bit. You don’t need to read any of the other text on this page, you just need to find the right download. If you’re on Windows and unsure which one to download, look at sub-point on the next screen.</p>
       },
-      19: {
+      18: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson1_19.png' />,
         content: <p>On a Windows computer, if you are unsure of whether it’s 32- or 64-bit, press the Windows key (or click on the start menu), type “This PC” or “Computer”, and click the “Properties” link that appears in the search menu. Then, in the “System” section, look at the “System type” field, which will tell you if your system is 32- or 64-bit.</p>
       },
-      20: {
+      19: {
         actionType: ActionType.Code,
         content: <p>4. Once you have the right file downloaded from GitHub, go back to the WPILib documentation using the same link as before: <a href='https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html'>https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html</a></p>
       },
-      21: {
+      20: {
         actionType: ActionType.Code,
         content: <p>5. In the documentation, follow all the steps on the page, starting with the “Extracting the Installer” step. There are images to guide you. If you are unsure what options to choose at any point through the setup, follow the default recommendations that the documentation gives you. If you’re unsure about “Install for this User” or “Install for all Users”, you can choose “Install for this User”.</p>
       },
-      22: {
+      21: {
         actionType: ActionType.Read,
         content: <p>6. Partway through the page you’ll notice a green warning similar to the one pictured below. If this is your first time installing VSCode, you probably don’t need to worry about this warning  too much, but if for any reason you have a version of VSCode installed your computer already, pay attention to this. Only the new version that you’re installing will work – any prior installation will NOT work, even if it was done for a robotics team.</p>
       },
-      23: {
+      22: {
         actionType: ActionType.Read,
         content: <p>7. Make sure to read through the page thoroughly while you follow the steps. It is easy to make a mistake, but if you do follow the steps exactly, it will work. If it does not work, you can attempt to backtrack and see what step you missed. Starting over from scratch can sometimes be an easier option as well.</p>
       }
     },
-    'Step 2 – Setting Up Your Romi': {
-      24: {
+    'Step 2 – Setting Up Your XRP': {
+      23: {
         actionType: ActionType.Read,
-        content: <p>To set up your Romi, you need to download and install firmware on it. You can think of firmware as kind of like an operating system for the Romi. It needs to have firmware installed in order to execute the programs that you write. There are a lot of details in the documentation during this section, but you don’t need to read all of them. Follow the steps listed here to successfully install the firmware and configure your robot for use.</p>
+        content: <p>To set up your XRP, you need to download and install firmware on it. You can think of firmware as kind of like an operating system for the XRP. It needs to have firmware installed in order to execute the programs that you write. There are a lot of details in the documentation during this section, but you don’t need to read all of them. Follow the steps listed here to successfully install the firmware and configure your robot for use.</p>
+      },
+      24: {
+        actionType: ActionType.Code,
+        content: <p>1. Start by following this link: <a href='https://docs.wpilib.org/en/stable/docs/XRP-robot/index.html'>https://docs.wpilib.org/en/stable/docs/XRP-robot/index.html</a> You don’t actually need to read the information on this page, but keep this link as a reference because if you want to do more advanced things with the XRP after reading through this course, you can refer back to it.</p>
       },
       25: {
-        actionType: ActionType.Code,
-        content: <p>1. Start by following this link: <a href='https://docs.wpilib.org/en/stable/docs/romi-robot/index.html'>https://docs.wpilib.org/en/stable/docs/romi-robot/index.html</a> You don’t actually need to read the information on this page, but keep this link as a reference because if you want to do more advanced things with the Romi after reading through this course, you can refer back to it.</p>
-      },
-      26: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson1_26.png' />,
         content: <p>2. On the page linked above, click the “Next” button in the bottom-right corner.</p>
       },
-      27: {
+      26: {
         actionType: ActionType.Robot,
-        content: <p>3. You’ll now be on a page describing how to assemble the Romi. If your Romi is not assembled, follow all the steps here. If your Romi came pre-assembled, you can immediately scroll to the  bottom and click next.</p>
+        content: <p>3. You’ll now be on a page describing how to assemble the XRP. If your XRP is not assembled, follow all the steps here. If your XRP came pre-assembled, you can immediately scroll to the  bottom and click next.</p>
+      },
+      27: {
+        actionType: ActionType.Read,
+        content: <p>4. The next page is titled “Imaging your XRP”. This page is important for ALL users, regardless of whether your XRP came pre-assembled. The first think you’ll need to do is download the
+          XRPWPILibPi image. The steps to do this are a little confusing so follow closely:</p>
       },
       28: {
-        actionType: ActionType.Read,
-        content: <p>4. The next page is titled “Imaging your Romi”. This page is important for ALL users, regardless of whether your Romi came pre-assembled. The first think you’ll need to do is download the
-          RomiWPILibPi image. The steps to do this are a little confusing so follow closely:</p>
-      },
-      29: {
         actionType: ActionType.Code,
-        content: <p>4a. Click on the “Romi WPILibPi” link which takes you to a GitHub page:</p>,
+        content: <p>4a. Click on the “XRP WPILibPi” link which takes you to a GitHub page:</p>,
         image: <img src='./images/lesson1_4a.png' />
       },
-      30: {
+      29: {
         actionType: ActionType.Code,
         content: <p>4b. There will be a large link on the top of this page that looks similar to the image below, although the exact numbers and dates may have changed relative to the image. <strong>Make sure you’re at the top of the page and that you did not scroll down.</strong> Before clicking on this link, look at the scrollbar in the upper right corner of your browser – it should be quite small. After looking at it and visualizing how large it is, click the big WPILibPi link. <strong>It may appear as though nothing on your screen has changed.</strong></p>,
         image: <img src='./images/lesson1_4b.png' />
       },
-      31: {
+      30: {
         actionType: ActionType.Search,
         content: <p>4c. After clicking on the link, check your scrollbar again. It should now be larger.</p>,
         image: <img src='./images/lesson1_4c.png' />
       },
-      32: {
+      31: {
         actionType: ActionType.Code,
-        content: <p>4d. If the scrollbar grew in size <strong>and</strong> the WPILibPi link stayed the same, you’re on the right path. If the numbers in the WPILibPi link changed after you clicked the link, then go back and make sure you’re scrolled to the top of the page before you click the link. But if it stayed the same, you’re good to go. Now scroll down to the bottom of this page and you’ll see a list of files. Click the WPILibPi_image file that is suffixed with “-Romi”. Again, the numbers may be slightly different on your screen, compared to the image below:</p>,
+        content: <p>4d. If the scrollbar grew in size <strong>and</strong> the WPILibPi link stayed the same, you’re on the right path. If the numbers in the WPILibPi link changed after you clicked the link, then go back and make sure you’re scrolled to the top of the page before you click the link. But if it stayed the same, you’re good to go. Now scroll down to the bottom of this page and you’ll see a list of files. Click the WPILibPi_image file that is suffixed with “-XRP”. Again, the numbers may be slightly different on your screen, compared to the image below:</p>,
         image: <img src='./images/lesson1_4d.png' />
       },
-      33: {
+      32: {
         actionType: ActionType.Code,
-        content: <p>4e. Once you’ve downloaded this zip file, go back to the WPILib documentation, on the page called “Imaging your Romi”: <a href='https://docs.wpilib.org/en/stable/docs/romirobot/imaging-romi.html'>https://docs.wpilib.org/en/stable/docs/romirobot/imaging-romi.html</a></p>,
+        content: <p>4e. Once you’ve downloaded this zip file, go back to the WPILib documentation, on the page called “Imaging your XRP”: <a href='https://docs.wpilib.org/en/stable/docs/XRProbot/imaging-XRP.html'>https://docs.wpilib.org/en/stable/docs/XRProbot/imaging-XRP.html</a></p>,
       },
-      34: {
+      33: {
         actionType: ActionType.Code,
         content: <p>4f. Under the heading “Imaging”, there is a link for a WPILibPi Installation guide. Click that link:</p>,
         image: <img src='./images/lesson1_4f.png' />
       },
-      35: {
+      34: {
         actionType: ActionType.Code,
         content: <p>4g. On this new page, you can ignore the first link to a WPILibPi repository – that’s where you just were, and what you just downloaded. Read through the instructions and you’ll get to the heading “Copy the image to your MicroSD card”. Then you’ll see a link to installing a program called Etcher. Follow that link:</p>,
         image: <img src='./images/lesson1_4g.png' />
       },
-      36: {
+      35: {
         actionType: ActionType.Code,
         content: <p>4h. On this page, scroll down to the heading “Get your assets” and select the proper download for your operation system:</p>,
         image: <img src='./images/lesson1_4h.png' />
       },
-      37: {
+      36: {
         actionType: ActionType.Code,
         content: <p>4i. When you’re done downloading Etcher, head back to the imaging page in the WPILib documentation: <a href='https://docs.wpilib.org/en/stable/docs/software/visionprocessing/wpilibpi/installing-the-image-to-your-microsd-card.html'>https://docs.wpilib.org/en/stable/docs/software/visionprocessing/wpilibpi/installing-the-image-to-your-microsd-card.html</a></p>,
       },
-      38: {
+      37: {
         actionType: ActionType.Code,
         content: <p>4j. Follow the instructions on this page where you left. It explains how to flash the MicroSD card with the image using Etcher. Note how it states: “Expect the process to take about 3 minutes on a fairly fast laptop.” If the flashing process happens very quickly and does not take a couple minutes, it did not flash correctly, but Etcher may still say that the flash is complete. If this happens to you, double check that you selected your downloaded zip file (do NOT unzip it first), and check that you selected your MicroSD card as the target. When it flashes correctly, it will go through a few different phases. First, decompressing. Then it will pause for a moment. Then, flashing, then validating, then finishing, where again it will pause for a moment. You can refer to the images below – click “Flash from file”, select the zipped image, select the target as your SD card, wait for it to finish, and then it should show the “Flash Complete!” Message after flashing successfully.</p>,
         image: <img src='./images/lesson1_4j.png' />
       },
-      39: {
+      38: {
         actionType: ActionType.Code,
         content: <p>4k. After you’ve successfully flashed the SD card, head back to this page: <a href='https://docs.wpilib.org/en/stable/docs/software/vision-processing/wpilibpi/installingthe-image-to-your-microsd-card.html'>https://docs.wpilib.org/en/stable/docs/software/vision-processing/wpilibpi/installingthe-image-to-your-microsd-card.html</a> and scroll down to the bottom, to the “Testing the Raspberry PI” section, and continue following the steps.</p>,
       },
-      40: {
+      39: {
         actionType: ActionType.Code,
-        content: <p>4l. For step 2, plug an ethernet cable directly from your computer into the Romi and navigate to the URL provided.</p>,
+        content: <p>4l. For step 2, plug an ethernet cable directly from your computer into the XRP and navigate to the URL provided.</p>,
       },
-      41: {
+      40: {
         actionType: ActionType.Code,
         content: <p>4m. Finish completing the steps on this page and click “Next”.</p>,
       },
-      42: {
+      41: {
         actionType: ActionType.Code,
         content: <p>4n. After clicking next, you get a long page with a lot of info. You can ignore a lot of this info, although you can read it if you’re interested. Read from the start of the page up until the “System status” heading, at which point you can stop if you want.</p>,
       },
+      42: {
+        actionType: ActionType.Code,
+        content: <p>4o. In the web interface, navigate to “Network Settings”. Click “Writable” at the top. On this page, you can set the name of your XRP’s wifi network if you want to in the SSID field. You can also leave it as WPILibPi if you want to, but if you’re in a class or lab with other people you might want to choose something unique. You can also enter a wifi security code in the WPA2 Passphrase field if you want.</p>,
+      },
       43: {
         actionType: ActionType.Code,
-        content: <p>4o. In the web interface, navigate to “Network Settings”. Click “Writable” at the top. On this page, you can set the name of your Romi’s wifi network if you want to in the SSID field. You can also leave it as WPILibPi if you want to, but if you’re in a class or lab with other people you might want to choose something unique. You can also enter a wifi security code in the WPA2 Passphrase field if you want.</p>,
+        content: <p>4p. Lastly, click on the XRP tab, scroll down to the “IMU Calibration” section, read the instructions (lay the XRP on a flat surface and don’t touch it while calibrating), and click “Calibrate Gyro”. When you’re done, click the “Read-Only” button at the top.</p>,
+        image: <img src='./images/lesson1_4p.png' />
       },
       44: {
         actionType: ActionType.Code,
-        content: <p>4p. Lastly, click on the Romi tab, scroll down to the “IMU Calibration” section, read the instructions (lay the Romi on a flat surface and don’t touch it while calibrating), and click “Calibrate Gyro”. When you’re done, click the “Read-Only” button at the top.</p>,
-        image: <img src='./images/lesson1_4p.png' />
-      },
-      45: {
-        actionType: ActionType.Code,
-        content: <p>4q. You’re now done with the network configuration. You can unplug the ethernet cable. Now you can connect to your Romi wirelessly the same way you would connect to any other wifi network on your computer. The network name will be whatever you set it to, or if you did not change it, it will be whichever network starts with “WPILibPi”. There are a couple things to note about connecting to the Romi over wifi. First, when you do so, you will disconnect from any other wifi networks you’re connected to, meaning you will probably lose internet access if you’re connected to your internet over wifi. You can maintain internet access and connect to the Romi at the same time if you connect to your internet with an ethernet cable, but if you’re not connecting to the internet with a cable, be prepared to lose access. Third, sometimes on Windows the network connection screen might look like the first image below while you are connected. If your screen sits with scrolling white dots, you’re probably connected after a few seconds. It might also say “No Internet” (second image), while in reality, you’re still connected to the Romi – you just don’t have access to the internet, because your Romi is just a robot, not a router that connects you to the outside world like you’re usually connected to with wifi.</p>,
+        content: <p>4q. You’re now done with the network configuration. You can unplug the ethernet cable. Now you can connect to your XRP wirelessly the same way you would connect to any other wifi network on your computer. The network name will be whatever you set it to, or if you did not change it, it will be whichever network starts with “WPILibPi”. There are a couple things to note about connecting to the XRP over wifi. First, when you do so, you will disconnect from any other wifi networks you’re connected to, meaning you will probably lose internet access if you’re connected to your internet over wifi. You can maintain internet access and connect to the XRP at the same time if you connect to your internet with an ethernet cable, but if you’re not connecting to the internet with a cable, be prepared to lose access. Third, sometimes on Windows the network connection screen might look like the first image below while you are connected. If your screen sits with scrolling white dots, you’re probably connected after a few seconds. It might also say “No Internet” (second image), while in reality, you’re still connected to the XRP – you just don’t have access to the internet, because your XRP is just a robot, not a router that connects you to the outside world like you’re usually connected to with wifi.</p>,
         image: <img src='./images/lesson1_4q.png' />,
         more_images: <img src='./images/lesson1_4q1.png' />,
       },
-      46: {
+      45: {
         actionType: ActionType.Read,
-        content: <p>Congratulations! You’re finally done setting up your Romi. It’s time to make it move!</p>
+        content: <p>Congratulations! You’re finally done setting up your XRP. It’s time to make it move!</p>
       }
     },
     'Part 2 - Running Your First Program': {
-      47: {
+      46: {
         actionType: ActionType.Code,
-        content: <p>Navigate to this page in your browser: <a href='https://docs.wpilib.org/en/stable/docs/romi-robot/programming-romi.html'>https://docs.wpilib.org/en/stable/docs/romi-robot/programming-romi.html</a> and open VSCode. Make sure you’re connected to your Romi through your wifi network.</p>
+        content: <p>Navigate to this page in your browser: <a href='https://docs.wpilib.org/en/stable/docs/romi-robot/programming-romi.html'>https://docs.wpilib.org/en/stable/docs/romi-robot/programming-romi.html</a> and open VSCode. Make sure you’re connected to your XRP through your wifi network.</p>
       },
-      48: {
+      47: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson1_31.png' />,
         content: <p>Follow the steps in the linked page all the way to the end. There are a couple items that you’ll need to specify that are not covered by the linked page. First, when it asks you to select a language, pick Java (as shown below). Head to the next screen on this interactive course before moving on.</p>
       },
-      49: {
+      48: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson1_32.png' />,
-        content: <p>For the “Base Folder” field, you can choose whatever you want in your filesystem, but it might be a good idea to create a folder called “Development” in an easy-accessible location, where you put all your Romi projects. For the project name, you can again enter whatever you want. “ExampleProgram” might be a good name for your first project. Leave the “Create a new folder?” checkbox checked. For “Team Number”, if you belong to an FRC team, you can enter your team’s number. If you do not, or you don’t know what an FRC team is, you can enter “0000”. Do not check the “Enable Desktop Support” checkbox. Pictured below is an example. When you're finished with this, head to the next screen on this interactive course.</p>
+        content: <p>For the “Base Folder” field, you can choose whatever you want in your filesystem, but it might be a good idea to create a folder called “Development” in an easy-accessible location, where you put all your XRP projects. For the project name, you can again enter whatever you want. “ExampleProgram” might be a good name for your first project. Leave the “Create a new folder?” checkbox checked. For “Team Number”, if you belong to an FRC team, you can enter your team’s number. If you do not, or you don’t know what an FRC team is, you can enter “0000”. Do not check the “Enable Desktop Support” checkbox. Pictured below is an example. When you're finished with this, head to the next screen on this interactive course.</p>
+      },
+      49: {
+        actionType: ActionType.Code,
+        content: <p>Back on the “Programming the XRP” webpage, you can ignore the paragraph right near the end that says “If you changed the XRP network settings...”. This means the last thing you’ll do in the instructions is press F5, which will deploy the example project. Go ahead and do this! If when you press F5 you get any sort of build error (you will see red text near the bottom of your screen saying build failed), try rebooting VSCode and your XRP, re-connecting to your XRP’s wifi (remember that will take a minute for the wifi network to pop up), and deploying again. Sometimes VSCode will fail to contact the XRP even if there is nothing wrong with your code, but rebooting solves this.</p>
       },
       50: {
-        actionType: ActionType.Code,
-        content: <p>Back on the “Programming the Romi” webpage, you can ignore the paragraph right near the end that says “If you changed the Romi network settings...”. This means the last thing you’ll do in the instructions is press F5, which will deploy the example project. Go ahead and do this! If when you press F5 you get any sort of build error (you will see red text near the bottom of your screen saying build failed), try rebooting VSCode and your Romi, re-connecting to your Romi’s wifi (remember that will take a minute for the wifi network to pop up), and deploying again. Sometimes VSCode will fail to contact the Romi even if there is nothing wrong with your code, but rebooting solves this.</p>
-      },
-      51: {
         actionType: ActionType.Search,
         image: <img src='./images/lesson1_34.png' />,
         content: <p>After you deploy your code, VSCode will bring up a new interface (called the “Robot Simulation” interface) that looks something like this. Note 1: Sometimes the Robot Simulation window will not open the first time you press F5. If this happens to you, simply click the red square to end your program, and press F5 again.</p>
       },
-      52: {
+      51: {
         actionType: ActionType.Search,
         image: <img src='./images/lesson1_35.png' />,
         content: <p>Note 2: If you have the FRC Driver Station application installed on your computer, you may not see the Robot State box in the upper left of the image below. Instead, you will use the FRC Driver Station app to enable/disable your robot and select modes. If you don’t know what the FRC Driver Station is, don’t worry about this note.</p>
       },
+      52: {
+        actionType: ActionType.Code,
+        content: <p>This interface lets you control the XRP and see various output from the onboard sensors. But what we’re most interested in right now is making it move. The simplest way to do this with the sample program is to enable its autonomous program. Enabling the autonomous program will cause the XRP to drive forward about ten inches, turn around, drive back to its original location, and then turn around again. Make sure you have the XRP somewhere where it can safely do this (not at the edge of a desk or table) and be ready to enable it. Look at the photo above, and find the “Robot State” box, in the upper left, highlighted in green. Here you will see a list of four robot states – Disabled, Autonomous, Teleoperated, and Test. As soon as you click Autonomous, the XRP will enable and immediately begin its autonomous routine. When you’re ready, give it a try! After the XRP finishes moving, click the Disabled option to disable it again. Although the XRP is lightweight and low power, making sure robots are disabled when not in direct use is a critical safety practice.</p>
+      },
       53: {
         actionType: ActionType.Code,
-        content: <p>This interface lets you control the Romi and see various output from the onboard sensors. But what we’re most interested in right now is making it move. The simplest way to do this with the sample program is to enable its autonomous program. Enabling the autonomous program will cause the Romi to drive forward about ten inches, turn around, drive back to its original location, and then turn around again. Make sure you have the Romi somewhere where it can safely do this (not at the edge of a desk or table) and be ready to enable it. Look at the photo above, and find the “Robot State” box, in the upper left, highlighted in green. Here you will see a list of four robot states – Disabled, Autonomous, Teleoperated, and Test. As soon as you click Autonomous, the Romi will enable and immediately begin its autonomous routine. When you’re ready, give it a try! After the Romi finishes moving, click the Disabled option to disable it again. Although the Romi is lightweight and low power, making sure robots are disabled when not in direct use is a critical safety practice.</p>
+        content: <p>Now that you’ve made the XRP move on its own, it’s time to try driving it yourself. If you look at the window called “System Joysticks”, highlighted in red, you will see any joysticks that you have plugged in to your computer. In the example, there is an Xbox controller plugged in, but you can use anything that your computer recognizes as a joystick. There’s an additional window called simply “Joysticks”, highlighted in yellow, and these are the joysticks that your code and XRP are looking at for input. You may not see any joysticks listed in this window. If that is the case, you can simply drag and drop your joysticks from the System Joysticks window, to the Joysticks window. In the example photo, the Xbox Controller has been dragged to joystick 0. Do likewise – drag whatever joystick you want to use as your controller to the 0 slot. If you have multiple joysticks plugged in to your computer, you may need to do some quick tests to figure out which one is which. How to do this is explained next.</p>
       },
       54: {
-        actionType: ActionType.Code,
-        content: <p>Now that you’ve made the Romi move on its own, it’s time to try driving it yourself. If you look at the window called “System Joysticks”, highlighted in red, you will see any joysticks that you have plugged in to your computer. In the example, there is an Xbox controller plugged in, but you can use anything that your computer recognizes as a joystick. There’s an additional window called simply “Joysticks”, highlighted in yellow, and these are the joysticks that your code and Romi are looking at for input. You may not see any joysticks listed in this window. If that is the case, you can simply drag and drop your joysticks from the System Joysticks window, to the Joysticks window. In the example photo, the Xbox Controller has been dragged to joystick 0. Do likewise – drag whatever joystick you want to use as your controller to the 0 slot. If you have multiple joysticks plugged in to your computer, you may need to do some quick tests to figure out which one is which. How to do this is explained next.</p>
-      },
-      55: {
         actionType: ActionType.Search,
         content: <p>After dragging your joystick so the Joysticks window, try moving your joystick around and pressing some buttons. You will see the yellow squares at the bottom of the Joysticks window fill/unfill as you press and release buttons, and you can see the axis values change in value as you move the sticks around. This is how you can test which joystick in the System Joysticks is which if you are not sure. If you have one joystick dragged to the joysticks window and pressing buttons/moving the sticks doesn’t change any of the values, you probably dragged a different stick.</p>
       },
-      56: {
+      55: {
         actionType: ActionType.Code,
         content: <p>Once you’ve gotten your joystick to register, and you’ve confirmed it’s in the Joystick[0] slot, you’re ready to enable your robot! Look back at the robot state box, and when you’re ready, click Teleoperated. This will enable the robot. Now you can start trying to drive it around! If you press various buttons and/or sticks on your joystick/controller, you should be able to make the robot move. However, it may or may not control as you expect. For example, by default, if you’re using an Xbox controller, the left joystick will control the robot moving forward and backward, but the left trigger will control turning, and you’ll only be able to turn it one direction since the left trigger can only register positive values (as opposed to a joystick, which can register positive or negative values, e.g. if you push it forward or backward.) Now disable the robot. Your first task for you to start programming will be to fix the controls so it can drive normally. If your robot does drive as expected, which could happen for some controllers, then you can still follow the lesson. You’ll simply change it to drive abnormally, and then fix it again.</p>
       }
     },
     'Ending the Executing Program': {
-      57: {
+      56: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson1_40.png' />,
-        content: <p>After you press deploy your code, a small box with a few buttons will pop up in the top of VSCode. While this box is visible, you may not be able to deploy additional code to the Romi – VSCode may give you an error. When you want to deploy new code, simply click the red square in this box first, and then you can deploy your code:</p>
+        content: <p>After you press deploy your code, a small box with a few buttons will pop up in the top of VSCode. While this box is visible, you may not be able to deploy additional code to the XRP – VSCode may give you an error. When you want to deploy new code, simply click the red square in this box first, and then you can deploy your code:</p>
       }
     },
     'Fixing the Controls': {
-      58: {
+      57: {
         actionType: ActionType.Search,
         content: <p>As discussed above, you can look at the robot simulation interface, and see changes in the joystick section as you move the joysticks or press buttons. Decide which joystick axis you want to control turning. For example if you’re using an Xbox controller, this might be the left joystick being pushed left or right, or the right joystick being pushed left or right. If you’re using a single standalone joystick, you don’t have as many options. But either way, decide what you want, and then start pushing the joystick that way. On the joysticks interface you will see a value change. For example, it might move from 0 to 1 or -1 depending on which direction you push it. The important thing here is to note which axis is changing. The axes are labeled from 0 to 5 in brackets, like so: Axis[4]. Determine which axis is changing, and remember this number.</p>
       },
-      59: {
+      58: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson1_42.png' />,
         content: <p>Now let’s dig into the code. Back in VSCode, open the “Explorer” (highlighted in red, upper left, see the picture below) and then click on src, java, frc, robot, and then finally double click on RobotContainer.java to open it.</p>
       },
-      60: {
+      59: {
         actionType: ActionType.Search,
         image: <img src='./images/lesson1_43.png' />,
         content: <p>If you’re brand new to programming, there is a lot to take in here – but don’t worry about that. We’ll discuss everything in time, but for now let’s get those controls fixed. Scroll down in RobotContainer.java until you see line number 95. The lines are numbered on the left side of the code. On line 95, you’ll see this:</p>
       },
-      61: {
+      60: {
         actionType: ActionType.Code,
-        content: <p>At the end of the line, you’ll see “m_controller.getRawAxis(2))”, highlighted in red above. This line sets which axes of the joystick are being used to control the robot. Change the 2 to whatever axis you identified when testing the controls. If your controls were already correct, try changing it to something else, following the next step, and then changing it back. Once you do this, you can press ctrl+s to save, and F5 to deploy your code to the Romi again. Once the code finishes deploying, you can enable it again and try out your new controls. If you put the right axis, you’ll be able to drive your robot comfortably! If the controls aren’t what you expected, double check your axes again when you push on them using the joysticks interface, and make sure you changed the correct value in the code. Now that you have your Romi driving around, have some fun with it! You’ve taken your first steps into writing code and you already have a robot driving around.</p>
+        content: <p>At the end of the line, you’ll see “m_controller.getRawAxis(2))”, highlighted in red above. This line sets which axes of the joystick are being used to control the robot. Change the 2 to whatever axis you identified when testing the controls. If your controls were already correct, try changing it to something else, following the next step, and then changing it back. Once you do this, you can press ctrl+s to save, and F5 to deploy your code to the XRP again. Once the code finishes deploying, you can enable it again and try out your new controls. If you put the right axis, you’ll be able to drive your robot comfortably! If the controls aren’t what you expected, double check your axes again when you push on them using the joysticks interface, and make sure you changed the correct value in the code. Now that you have your XRP driving around, have some fun with it! You’ve taken your first steps into writing code and you already have a robot driving around.</p>
       }
     }
   },
@@ -305,7 +293,7 @@ const data: CourseData = {
     'Introduction': {
       0: {
         actionType: ActionType.Read,
-        content: <p>In Lesson 1, you got your Romi driving around and made a small code change. In this lesson,
+        content: <p>In Lesson 1, you got your XRP driving around and made a small code change. In this lesson,
           we’ll talk a little bit about Java as a programming language so you can start to make sense of all the
           folders and files you see in VSCode.</p>
       }
@@ -319,12 +307,12 @@ const data: CourseData = {
       2: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson2_2.png' />,
-        content: <p>In both the method calls above, the text in quotation marks will be outputted. In the second one, a line break will be added to the end of the text. The only difference is the addition of “ln” (with a lowercase L) after “print”, which is abbreviation for “line”. So, in English, system-dot-out-dot-print, and system-dot-out-dot-print-line. You can add these lines of code to your Romi program and try them out for yourself. Open Main.java, which is in the same location as RobotContainer.java from the previous lesson (explorer-{">"}src-{">"}main-{">"}java-{">"}frc-{">"}robot) and scroll down to line 23. Here you can insert these lines. Make sure to put them before the line that says RobotBase.startRobot(Robot::new);. Here is an example:</p>
+        content: <p>In both the method calls above, the text in quotation marks will be outputted. In the second one, a line break will be added to the end of the text. The only difference is the addition of “ln” (with a lowercase L) after “print”, which is abbreviation for “line”. So, in English, system-dot-out-dot-print, and system-dot-out-dot-print-line. You can add these lines of code to your XRP program and try them out for yourself. Open Main.java, which is in the same location as RobotContainer.java from the previous lesson (explorer-{">"}src-{">"}main-{">"}java-{">"}frc-{">"}robot) and scroll down to line 23. Here you can insert these lines. Make sure to put them before the line that says RobotBase.startRobot(Robot::new);. Here is an example:</p>
       },
       3: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson2_3.png' />,
-        content: <p>After you do this, you press F5 to run your program and click on the TERMINAL output window example shown below. (It will take a few seconds to compile and run. You do not need your Romi powered on to do this test. You may need to scroll up in the terminal window, but if you look closely, you will see your output text. Here’s the output from running the example above; you can see the difference between print and println because some of the outputs create new lines and some do not.)</p>
+        content: <p>After you do this, you press F5 to run your program and click on the TERMINAL output window example shown below. (It will take a few seconds to compile and run. You do not need your XRP powered on to do this test. You may need to scroll up in the terminal window, but if you look closely, you will see your output text. Here’s the output from running the example above; you can see the difference between print and println because some of the outputs create new lines and some do not.)</p>
       },
       4: {
         actionType: ActionType.Code,
@@ -340,7 +328,7 @@ const data: CourseData = {
     'Variables': {
       6: {
         actionType: ActionType.Read,
-        content: <p>We’ll talk more about methods in a bit, but before we do that, let’s talk about another concept called a “variable”. A variable is some value that exists in your program that has a name and can be changed and used. For example, you could have a variable called “robotSpeed” that represents the current speed of your Romi in inches per second. Since the Romi has encoders on the drive motors, which measure the rate of rotation, you could do some math to determine the current speed at which the wheels are spinning, and then store that value in robotSpeed. Then you could do something like outputting the speed to the terminal using System.out.println (SOP) and get a real-time update of your robot’s speed. You could even write a method that does all of this for you!</p>
+        content: <p>We’ll talk more about methods in a bit, but before we do that, let’s talk about another concept called a “variable”. A variable is some value that exists in your program that has a name and can be changed and used. For example, you could have a variable called “robotSpeed” that represents the current speed of your XRP in inches per second. Since the XRP has encoders on the drive motors, which measure the rate of rotation, you could do some math to determine the current speed at which the wheels are spinning, and then store that value in robotSpeed. Then you could do something like outputting the speed to the terminal using System.out.println (SOP) and get a real-time update of your robot’s speed. You could even write a method that does all of this for you!</p>
       },
       7: {
         actionType: ActionType.Read,
@@ -373,17 +361,17 @@ const data: CourseData = {
       },
       13: {
         actionType: ActionType.Code,
-        content: <p>The last thing you might notice about this short program is that on line 32, there is text in green that reads as an English sentence, not Java code. The line is prefaced by two forward slashes - //. Putting two forward slashes in a line indicates that the rest of that line is a comment – Java will ignore it, so you can type whatever you want without causing an error. This is a helpful tool for writing text that explains what the code does, for humans to read. We’ll talk more about comments later. For now, undo all your new additions to Main.java, because as mentioned before we generally don’t want to put code here. Next we’ll do a small project to get you a little bit more practice with methods and variables so you can see how you can use them to modify the behavior of your Romi.</p>
+        content: <p>The last thing you might notice about this short program is that on line 32, there is text in green that reads as an English sentence, not Java code. The line is prefaced by two forward slashes - //. Putting two forward slashes in a line indicates that the rest of that line is a comment – Java will ignore it, so you can type whatever you want without causing an error. This is a helpful tool for writing text that explains what the code does, for humans to read. We’ll talk more about comments later. For now, undo all your new additions to Main.java, because as mentioned before we generally don’t want to put code here. Next we’ll do a small project to get you a little bit more practice with methods and variables so you can see how you can use them to modify the behavior of your XRP.</p>
       }
     },
-    'Modifying Your Romi’s Drive Behavior': {
+    'Modifying Your XRP’s Drive Behavior': {
       14: {
         actionType: ActionType.Search,
         content: <p>Let’s take a look at how you can use variables in code to change the behavior of your robot. Open the file called Drivetrain.java. You can find it in the “Subsystems” folder in src/main/java/frc/robot. On lines 45-47 there is a method called arcadeDrive. Unlike System.out.println, this method is a custom-created method in our code, as opposed to a method native to the Java programming language. We will talk more about user-created methods soon. For now, take a look at line 45. There are parentheses, inside of which you see “double xaxisSpeed, double zaxisRotate”. These are variables that are being declared. This is a slightly different way to declare variables which we’ll talk more about soon. What’s important about these variables is when this code runs, they are assigned values dynamically. This is different than when you declared variables above and set them equal to a value. Again, we’ll discuss it more soon, but for now, just know that whenever this code runs, these variables are assigned the values that are read from the joysticks. Remember, the joysticks range from -1 to 1, so that’s the possible range these variables could receive. If one joystick axis is halfway forward and the other is all the way back, they would have values of .5 and -1, respectively.</p>
       },
       15: {
         actionType: ActionType.Code,
-        content: <p>On line 46, we call another method, and pass in the same variables. We didn’t really talk about “passing in” when we were using SOP, but to pass in means to send some information to a method. With SOP, you’re passing in the text you want to print. The method prints whatever it’s given, so you give it what you want to print. Line 46 functions the same way, except you’re passing in joystick values instead. We want to get some practice seeing how variables can affect our robot. If you press F5 right now and deploy your code to your Romi, you can try driving it around for a moment. Get a feel for how fast it goes when you give it full throttle, half throttle, etc. We’re going to modify the throttle power and then you can compare the two.</p>
+        content: <p>On line 46, we call another method, and pass in the same variables. We didn’t really talk about “passing in” when we were using SOP, but to pass in means to send some information to a method. With SOP, you’re passing in the text you want to print. The method prints whatever it’s given, so you give it what you want to print. Line 46 functions the same way, except you’re passing in joystick values instead. We want to get some practice seeing how variables can affect our robot. If you press F5 right now and deploy your code to your XRP, you can try driving it around for a moment. Get a feel for how fast it goes when you give it full throttle, half throttle, etc. We’re going to modify the throttle power and then you can compare the two.</p>
       },
       16: {
         actionType: ActionType.Code,
@@ -408,7 +396,7 @@ const data: CourseData = {
     'totalParagraphs': 22,
     'Introduction': {
       0: {
-        content: <p>In Lesson 2 you learned what methods are, but we only scratched the surface. In this lesson we’ll introduce two more critical concepts – classes and objects. We’ll learn how to utilize the buttons on your joystick and make the on-board lights on the Romi turn on and off. Start off by creating a new RomiReference project called “Lights”.</p>,
+        content: <p>In Lesson 2 you learned what methods are, but we only scratched the surface. In this lesson we’ll introduce two more critical concepts – classes and objects. We’ll learn how to utilize the buttons on your joystick and make the on-board lights on the XRP turn on and off. Start off by creating a new XRPReference project called “Lights”.</p>,
         actionType: ActionType.Code,
       }
     },
@@ -425,7 +413,7 @@ const data: CourseData = {
       3: {
         actionType: ActionType.Search,
         image: <img src='./images/lesson3_3.png' />,
-        content: <p>If you look at lines 20 and 21, you’ll see two more variables declared – m_left and m_rightMotor. This makes sense – thinking about the Romi, it has two motors, one on each side. However, these variables are unlike variables you’ve seen before. Instead of being of type int or double, they’re of type XRPMotor. What is a XRPMotor? Well, turns out you can hover your mouse over the word XRPMotor to get a brief description. There’s a lot of technical information in the pop-up that you can ignore for now, but the key part is the first sentence: “REV Robotics XRPMotor Speed Controller.” A XRPMotor represents a real-world object called a speed controller, which physically handles outputting voltage to motors to make them spin. In this case it’s called a XRPMotor and manufactured by the company REV Robotics.</p>
+        content: <p>If you look at lines 20 and 21, you’ll see two more variables declared – m_left and m_rightMotor. This makes sense – thinking about the XRP, it has two motors, one on each side. However, these variables are unlike variables you’ve seen before. Instead of being of type int or double, they’re of type XRPMotor. What is a XRPMotor? Well, turns out you can hover your mouse over the word XRPMotor to get a brief description. There’s a lot of technical information in the pop-up that you can ignore for now, but the key part is the first sentence: “REV Robotics XRPMotor Speed Controller.” A XRPMotor represents a real-world object called a speed controller, which physically handles outputting voltage to motors to make them spin. In this case it’s called a XRPMotor and manufactured by the company REV Robotics.</p>
       },
       4: {
         actionType: ActionType.Search,
@@ -484,7 +472,7 @@ const data: CourseData = {
       15: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson3_15.png' />,
-        content: <p>The first step in hooking them up to a joystick button is figuring out which joystick button is which. This is a similar process to how you figured out which joystick axis was which in lesson one. Open the robot simulator interface if you don’t already have it open (you can press F5 to deploy your code right now if you’re connected to the Romi) and look at the joysticks window. You might need to re-drag your joystick from the Systems Joystick window, to the Joysticks window. Press whatever button on your controller you want to control the light turning on and off, and look at the yellow squares in the joystick window. One of them will light up. Count which number it is, from upper left, starting at one. For example, in this image, button 3 is lit up. Make note of which button lights up as you will need to remember the number in your code.</p>
+        content: <p>The first step in hooking them up to a joystick button is figuring out which joystick button is which. This is a similar process to how you figured out which joystick axis was which in lesson one. Open the robot simulator interface if you don’t already have it open (you can press F5 to deploy your code right now if you’re connected to the XRP) and look at the joysticks window. You might need to re-drag your joystick from the Systems Joystick window, to the Joysticks window. Press whatever button on your controller you want to control the light turning on and off, and look at the yellow squares in the joystick window. One of them will light up. Count which number it is, from upper left, starting at one. For example, in this image, button 3 is lit up. Make note of which button lights up as you will need to remember the number in your code.</p>
       },
       16: {
         actionType: ActionType.Code,
@@ -504,11 +492,11 @@ const data: CourseData = {
       19: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson3_19.png' />,
-        content: <p>You’re now almost done. The last thing to do is to tell the Romi to use the green LED as an output device. The way the Romi is physically constructed, its green and red LEDs use “digital input/output”, or DIO, ports, which can be used for either input or output. Using an LED is an example of output – the Romi will output the light. An example of input would be if you plugged a button into the DIO port, which would let the Romi receive input. We will not cover that in this course. By default, when you create a RomiReference project, both the red and green LED DIO ports are set to receive input, instead of output, so you’ll need to change that. Head to RobotContainer.java, go to line 34, and change the first instance of the word “INPUT” to “OUTPUT”. The second “INPUT” refers to the red LED, which you’re not using in this lesson. Example:</p>
+        content: <p>You’re now almost done. The last thing to do is to tell the XRP to use the green LED as an output device. The way the XRP is physically constructed, its green and red LEDs use “digital input/output”, or DIO, ports, which can be used for either input or output. Using an LED is an example of output – the XRP will output the light. An example of input would be if you plugged a button into the DIO port, which would let the XRP receive input. We will not cover that in this course. By default, when you create a XRPReference project, both the red and green LED DIO ports are set to receive input, instead of output, so you’ll need to change that. Head to RobotContainer.java, go to line 34, and change the first instance of the word “INPUT” to “OUTPUT”. The second “INPUT” refers to the red LED, which you’re not using in this lesson. Example:</p>
       },
       20: {
         actionType: ActionType.Code,
-        content: <p>Now you’re done! You can deploy your code to your Romi, enable it, and try pressing your button. You will notice that a light near the back of the Romi lights up while you’re holding the button down, and turns off when you release it.</p>
+        content: <p>Now you’re done! You can deploy your code to your XRP, enable it, and try pressing your button. You will notice that a light near the back of the XRP lights up while you’re holding the button down, and turns off when you release it.</p>
       },
       21: {
         actionType: ActionType.Read,
@@ -520,7 +508,7 @@ const data: CourseData = {
     'totalParagraphs': 15,
     'Introduction': {
       0: {
-        content: <p>Over the past two lessons you’ve learned what methods are and used them, but you’ve probably noticed a lot of things that you don’t understand about them. In this lesson we’re going to start building your understanding. Remember, methods are basically self-contained chunks of code that can be called in some other location, so the code doesn't need to be repeated. There are built-in methods (for example System.out.println) and you can also write your own methods. To do this lesson, we’re going to want a clean workspace in VSCode that doesn’t interact with the Romi, so we can write some basic methods and run them without needing to connect to the robot. Then in the next lesson we’ll switch back to working with the Romi and you’ll write some code that gives the Romi a slightly different control scheme while you hold down a button.</p>,
+        content: <p>Over the past two lessons you’ve learned what methods are and used them, but you’ve probably noticed a lot of things that you don’t understand about them. In this lesson we’re going to start building your understanding. Remember, methods are basically self-contained chunks of code that can be called in some other location, so the code doesn't need to be repeated. There are built-in methods (for example System.out.println) and you can also write your own methods. To do this lesson, we’re going to want a clean workspace in VSCode that doesn’t interact with the XRP, so we can write some basic methods and run them without needing to connect to the robot. Then in the next lesson we’ll switch back to working with the XRP and you’ll write some code that gives the XRP a slightly different control scheme while you hold down a button.</p>,
         actionType: ActionType.Read,
       }
     },
@@ -549,7 +537,7 @@ const data: CourseData = {
       5: {
         actionType: ActionType.Search,
         image: <img src='./images/lesson4_5.png' />,
-        content: <p>Every Java program must have exactly one “main” method, defined by the rather confusing-looking chain of word “public static void main(String[] args)”. Each of those words have a meeting you will learn soon – in this lesson you’ll learn what “void” means, and you can ignore the other words there for now. But the word “main” is the name of the method. Each program must have exactly one, because the main method is where your program starts, and every program needs a defined starting point. In practice there’s usually not much code in main methods; it simply calls some other method with a single line. As an example here’s the main method of your Romi project (you can find this in Main.java in java/frc/robot if you want to look for yourself.) Having only one line of code in your main method is a good practice to follow although for the sample programs you’ll write today it’s not super important</p>
+        content: <p>Every Java program must have exactly one “main” method, defined by the rather confusing-looking chain of word “public static void main(String[] args)”. Each of those words have a meeting you will learn soon – in this lesson you’ll learn what “void” means, and you can ignore the other words there for now. But the word “main” is the name of the method. Each program must have exactly one, because the main method is where your program starts, and every program needs a defined starting point. In practice there’s usually not much code in main methods; it simply calls some other method with a single line. As an example here’s the main method of your XRP project (you can find this in Main.java in java/frc/robot if you want to look for yourself.) Having only one line of code in your main method is a good practice to follow although for the sample programs you’ll write today it’s not super important</p>
       },
     },
     'YouTube Videos': {
@@ -575,7 +563,7 @@ const data: CourseData = {
       9: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson4_9.png' />,
-        content: <p>With the Romi, we got user input in the form of joystick and button presses. With this desktop app that we’re working on, we don’t have a joystick or buttons, but we do have our computer’s keyboard. Let’s write a quick program that gets input from the user and then prints the input back out. To do this, we’ll use Java’s built in Scanner class. The scanner accepts input in the terminal window where your output shows up. You will be able to type a number, press enter, and your program will read that number. Make sure that if your program is looking for an integer, you give it an integer! If you give it a decimal or a String (text), you will get an error. Here is a sample program you can write in VSCode:</p>
+        content: <p>With the XRP, we got user input in the form of joystick and button presses. With this desktop app that we’re working on, we don’t have a joystick or buttons, but we do have our computer’s keyboard. Let’s write a quick program that gets input from the user and then prints the input back out. To do this, we’ll use Java’s built in Scanner class. The scanner accepts input in the terminal window where your output shows up. You will be able to type a number, press enter, and your program will read that number. Make sure that if your program is looking for an integer, you give it an integer! If you give it a decimal or a String (text), you will get an error. Here is a sample program you can write in VSCode:</p>
       },
       10: {
         actionType: ActionType.Code,
@@ -661,13 +649,13 @@ const data: CourseData = {
     'Quick Practice': {
       6: {
         actionType: ActionType.Code,
-        content: <p>Try a quick demo for yourself using a non-Romi program, like you did in the last lesson, except instead of hourOfDay, use an int variable called “dayOfWeek”. A value of 1 represents Sunday, 2 Monday, etc. through all seven days. Then write an if statement and a series of else if statements that check the value until it finds what day of the week it is, and outputs a line of text saying which day of the week it is. Include an else statement that runs if the day of the week is not a sensible value, or in other words if it’s any value that isn’t between 1 and 7 inclusive. Then run your program and make sure it works correctly. Try it with a few different values and make sure that your code outputs the correct day, and make sure if you give it a value of, say, 12 that your else statement runs correctly.</p>
+        content: <p>Try a quick demo for yourself using a non-XRP program, like you did in the last lesson, except instead of hourOfDay, use an int variable called “dayOfWeek”. A value of 1 represents Sunday, 2 Monday, etc. through all seven days. Then write an if statement and a series of else if statements that check the value until it finds what day of the week it is, and outputs a line of text saying which day of the week it is. Include an else statement that runs if the day of the week is not a sensible value, or in other words if it’s any value that isn’t between 1 and 7 inclusive. Then run your program and make sure it works correctly. Try it with a few different values and make sure that your code outputs the correct day, and make sure if you give it a value of, say, 12 that your else statement runs correctly.</p>
       }
     },
-    'Romi Project – Cut Power Mode': {
+    'XRP Project – Cut Power Mode': {
       7: {
         actionType: ActionType.Code,
-        content: <p>In this project we’ll add a driving mode called “cut power” and bind it to a button on your controller. While the button is held, all power outputs to the Romi’s drivetrain will be reduced, but when the button is not being held everything is normal, letting you switch between drive modes instantly on the fly. This can be useful when you want extra maneuverability while driving. To start, create a new RomiReference project.</p>
+        content: <p>In this project we’ll add a driving mode called “cut power” and bind it to a button on your controller. While the button is held, all power outputs to the XRP’s drivetrain will be reduced, but when the button is not being held everything is normal, letting you switch between drive modes instantly on the fly. This can be useful when you want extra maneuverability while driving. To start, create a new XRPReference project.</p>
       },
       8: {
         actionType: ActionType.Code,
@@ -698,7 +686,7 @@ const data: CourseData = {
       },
       13: {
         actionType: ActionType.Code,
-        content: <p>Back in Drivetrain.java in your method, add a new line at the start of the method and then add an if statement. Your method has a parameter “boolean cutPowerMode”. You want to check if this variable is true or not. If it is you’ll want to scale the values of both xaxisSpeed and zaxisRotate, similar to how you did in the lesson about variables where you modified the drivetrain code. The exact amount to scale them by to make your cut power mode feel good will depend on what physical surface your Romi is driving on and how much friction there is. You can adjust the values after trying it out, but a decent starting point is to scale them both by .7. Creating this if statement and scaling the values is all you need to do here.</p>
+        content: <p>Back in Drivetrain.java in your method, add a new line at the start of the method and then add an if statement. Your method has a parameter “boolean cutPowerMode”. You want to check if this variable is true or not. If it is you’ll want to scale the values of both xaxisSpeed and zaxisRotate, similar to how you did in the lesson about variables where you modified the drivetrain code. The exact amount to scale them by to make your cut power mode feel good will depend on what physical surface your XRP is driving on and how much friction there is. You can adjust the values after trying it out, but a decent starting point is to scale them both by .7. Creating this if statement and scaling the values is all you need to do here.</p>
       },
       14: {
         actionType: ActionType.Read,
@@ -723,7 +711,7 @@ const data: CourseData = {
     'Updating the Default Command': {
       18: {
         actionType: ActionType.Read,
-        content: <p>Your new command and method are both ready to go, so the last thing you need to do is update the command that your drivetrain is using, to your new command. Navigate to RobotContainer.java and scroll to line 65. You’ll see a method call for “setDefaultCommand”. This line sets the default command for the drivetrain subsystem. You can set default commands for any subsystem, of which the Romi has two - the drivetrain, and the on-board IO, which controls the lights. Default commands run all the time as long as there is no other command issued to the subsystem. Using the drivetrain as an example, this is generally the case. In teleop, you just want to drive, so there’s generally no reason to issue other commands. There are exceptions to this, for example you could create a command to turn exactly 90 degrees when you press a button. If that command were issued to the drivetrain, the default drive command would stop running until the turn command finishes, and then once the turn command finishes, the default command would turn on again. Other situations where you might not want default commands to run would be during autonomous, where you want to issue specific commands. We’ll do all of these things in future lessons, but for now, we’re just interested in using the default command so we can drive, and we want that default command to be the new command we created.</p>
+        content: <p>Your new command and method are both ready to go, so the last thing you need to do is update the command that your drivetrain is using, to your new command. Navigate to RobotContainer.java and scroll to line 65. You’ll see a method call for “setDefaultCommand”. This line sets the default command for the drivetrain subsystem. You can set default commands for any subsystem, of which the XRP has two - the drivetrain, and the on-board IO, which controls the lights. Default commands run all the time as long as there is no other command issued to the subsystem. Using the drivetrain as an example, this is generally the case. In teleop, you just want to drive, so there’s generally no reason to issue other commands. There are exceptions to this, for example you could create a command to turn exactly 90 degrees when you press a button. If that command were issued to the drivetrain, the default drive command would stop running until the turn command finishes, and then once the turn command finishes, the default command would turn on again. Other situations where you might not want default commands to run would be during autonomous, where you want to issue specific commands. We’ll do all of these things in future lessons, but for now, we’re just interested in using the default command so we can drive, and we want that default command to be the new command we created.</p>
       },
       19: {
         actionType: ActionType.Code,
@@ -732,7 +720,7 @@ const data: CourseData = {
       },
       20: {
         actionType: ActionType.Code,
-        content: <p>The last thing you’ll need to do is import your new command, which you can do by clicking on the underlined command name, using the lightbulb (VSCode may do this automatically for you.) While you’re there you can remove the unused import for the previous ArcadeDrive command if you want; if you don’t do this, you’ll have a yellow underline pointing out that the import is not used, but it doesn’t affect your program. After you do this you can deploy your code and try out cut power mode! If you still need to, you may want to update which button controls cut power mode. Either way, try driving your Romi, and see how you can hold and release the cut power button to change its characteristics. If you want, you can go back to Drivetrain.java and change the values that you scale the inputs by to make cut power mode cut more or less power</p>
+        content: <p>The last thing you’ll need to do is import your new command, which you can do by clicking on the underlined command name, using the lightbulb (VSCode may do this automatically for you.) While you’re there you can remove the unused import for the previous ArcadeDrive command if you want; if you don’t do this, you’ll have a yellow underline pointing out that the import is not used, but it doesn’t affect your program. After you do this you can deploy your code and try out cut power mode! If you still need to, you may want to update which button controls cut power mode. Either way, try driving your XRP, and see how you can hold and release the cut power button to change its characteristics. If you want, you can go back to Drivetrain.java and change the values that you scale the inputs by to make cut power mode cut more or less power</p>
       }
     }
   },
