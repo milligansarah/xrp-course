@@ -6,7 +6,7 @@ const generated_data: CourseData = format_raw_processed_data_to_course_data();
 
 const data: CourseData = {
   'Lesson 1 - Getting Started': {
-    'totalParagraphs': 62,
+    'totalParagraphs': 50,
     'Introduction': {
       0: {
         actionType: ActionType.Read,
@@ -60,231 +60,190 @@ const data: CourseData = {
         content: <p>The XRP has a single power switch, as shown in the image below (sourced from <a href="https://docs.wpilib.org/en/stable/docs/xrp-robot/hardware-and-imaging.html">WPILib</a>). To turn it on, you simply have to flip the switch to the “on” position and flip it to the "off" position to turn it off. Remember to turn off your XRP when you're not using it to avoid draining the batteries.</p>
       },
     },
+    // TODO: Find an alternate video tutorial
     'Video Tutorial': {
-      13: {
+      11: {
         actionType: ActionType.Read,
-        content: <p>If you prefer videos over text instruction, you can follow this link to see a video of how to set up a XRP. If you prefer to follow a list of steps, or are unclear about any part of the video, you can follow the text steps outlined below. Video: <a href='https://www.youtube.com/watch?v=mop51tpWWcA' target='_blank'>https://www.youtube.com/watch?v=mop51tpWWcA</a></p>
+        content: <p>[Note: The video below is not for the XRP. The video will be corrected during the spring/summer of 2024] If you prefer videos over text instruction, you can follow this link to see a video of how to set up a XRP. If you prefer to follow a list of steps, or are unclear about any part of the video, you can follow the text steps outlined below. Video: <a href='https://www.youtube.com/watch?v=mop51tpWWcA' target='_blank'>https://www.youtube.com/watch?v=mop51tpWWcA</a></p>
       }
     },
     'Step 1 – Installing VSCode and the WPILib': {
-      14: {
+      12: {
         actionType: ActionType.Read,
-        content: <p>Programming the XRP is done using a library known as “WPILib”. WPILib is built into an installation of an application called “VSCode”, which is what you will use to write and deploy code to the XRP. There is documentation for the WPILib which includes guides on how to get started. To begin, follow the guide linked in the next screen to download VSCode. Note that the VSCode download and the XRP images are 1-2 gigabytes each and may take a few minutes to download.</p>
+        content: <p>Programming the XRP is done using a library known as “WPILib”. WPILib is built into an installation of an application called “VSCode”, which is what you will use to write and deploy code to the XRP. There is documentation for the WPILib which includes guides on how to get started. To begin, follow the guide linked in the next screen to download VSCode. Note that the VSCode download and the XRP images are about 1-2 gigabytes each and may take a few minutes to download.</p>
       },
-      15: {
+      13: {
         actionType: ActionType.Code,
-        content: <p>1. Start by opening this link: <a href='https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilibsetup.html' target='_blank'>https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilibsetup.html</a> You’ll be using Java.</p>
+        content: <p>1. Start by opening this link: <a href='https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html' target='_blank'>https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html</a> You’ll be using Java.</p>
       },
-      16: {
+      14: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson1_17.png' />,
         content: <p>2. There will be a link to GitHub which you need to follow:</p>
       },
-      17: {
+      15: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson1_18.png' />,
         content: <p>3. Once on GitHub, the actual downloads are at the bottom of the page; you’ll need to select the proper one based on which operating system you’re using (Windows, Mac, or Linux) and whether your system is 32-bit or 64-bit. You don’t need to read any of the other text on this page, you just need to find the right download. If you’re on Windows and unsure which one to download, look at sub-point on the next screen.</p>
       },
-      18: {
+      16: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson1_19.png' />,
         content: <p>On a Windows computer, if you are unsure of whether it’s 32- or 64-bit, press the Windows key (or click on the start menu), type “This PC” or “Computer”, and click the “Properties” link that appears in the search menu. Then, in the “System” section, look at the “System type” field, which will tell you if your system is 32- or 64-bit.</p>
       },
-      19: {
+      17: {
         actionType: ActionType.Code,
         content: <p>4. Once you have the right file downloaded from GitHub, go back to the WPILib documentation using the same link as before: <a href='https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html'>https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html</a></p>
       },
-      20: {
+      18: {
         actionType: ActionType.Code,
         content: <p>5. In the documentation, follow all the steps on the page, starting with the “Extracting the Installer” step. There are images to guide you. If you are unsure what options to choose at any point through the setup, follow the default recommendations that the documentation gives you. If you’re unsure about “Install for this User” or “Install for all Users”, you can choose “Install for this User”.</p>
       },
-      21: {
+      19: {
         actionType: ActionType.Read,
         content: <p>6. Partway through the page you’ll notice a green warning similar to the one pictured below. If this is your first time installing VSCode, you probably don’t need to worry about this warning  too much, but if for any reason you have a version of VSCode installed your computer already, pay attention to this. Only the new version that you’re installing will work – any prior installation will NOT work, even if it was done for a robotics team.</p>
       },
-      22: {
+      20: {
         actionType: ActionType.Read,
         content: <p>7. Make sure to read through the page thoroughly while you follow the steps. It is easy to make a mistake, but if you do follow the steps exactly, it will work. If it does not work, you can attempt to backtrack and see what step you missed. Starting over from scratch can sometimes be an easier option as well.</p>
       }
     },
     'Step 2 – Setting Up Your XRP': {
-      23: {
+      21: {
         actionType: ActionType.Read,
         content: <p>To set up your XRP, you need to download and install firmware on it. You can think of firmware as kind of like an operating system for the XRP. It needs to have firmware installed in order to execute the programs that you write. There are a lot of details in the documentation during this section, but you don’t need to read all of them. Follow the steps listed here to successfully install the firmware and configure your robot for use.</p>
       },
-      24: {
+      22: {
         actionType: ActionType.Code,
-        content: <p>1. Start by following this link: <a href='https://docs.wpilib.org/en/stable/docs/XRP-robot/index.html'>https://docs.wpilib.org/en/stable/docs/XRP-robot/index.html</a> You don’t actually need to read the information on this page, but keep this link as a reference because if you want to do more advanced things with the XRP after reading through this course, you can refer back to it.</p>
+        content: <p>1. Start by following this link: <a href='https://docs.wpilib.org/en/stable/docs/xrp-robot/index.html' target='_blank'>https://docs.wpilib.org/en/stable/docs/xrp-robot/index.html</a> You don’t actually need to read the information on this page, but keep this link as a reference because if you want to do more advanced things with the XRP after reading through this course, you can refer back to it.</p>
       },
-      25: {
+      23: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson1_26.png' />,
         content: <p>2. On the page linked above, click the “Next” button in the bottom-right corner.</p>
       },
-      26: {
+      24: {
         actionType: ActionType.Robot,
         content: <p>3. You’ll now be on a page describing how to assemble the XRP. If your XRP is not assembled, follow all the steps here. If your XRP came pre-assembled, you can immediately scroll to the  bottom and click next.</p>
       },
-      27: {
+      25: {
         actionType: ActionType.Read,
-        content: <p>4. The next page is titled “Imaging your XRP”. This page is important for ALL users, regardless of whether your XRP came pre-assembled. The first think you’ll need to do is download the
-          XRPWPILibPi image. The steps to do this are a little confusing so follow closely:</p>
+        content: <p>4. The next section is titled “Imaging your XRP”. This page is important for ALL users, regardless of whether your XRP came pre-assembled. The first think you’ll need to do is download the XRP WPILib image. The steps to do this are a little confusing so follow closely:</p>
       },
-      28: {
+      26: {
         actionType: ActionType.Code,
-        content: <p>4a. Click on the “XRP WPILibPi” link which takes you to a GitHub page:</p>,
+        content: <p>4a. Click on the “XRP-WPILib Firmware” link which takes you to a GitHub page:</p>,
         image: <img src='./images/lesson1_4a.png' />
       },
-      29: {
+      27: {
         actionType: ActionType.Code,
-        content: <p>4b. There will be a large link on the top of this page that looks similar to the image below, although the exact numbers and dates may have changed relative to the image. <strong>Make sure you’re at the top of the page and that you did not scroll down.</strong> Before clicking on this link, look at the scrollbar in the upper right corner of your browser – it should be quite small. After looking at it and visualizing how large it is, click the big WPILibPi link. <strong>It may appear as though nothing on your screen has changed.</strong></p>,
+        content: <p>4b. There will be a large link on the top of this page that looks similar to the image below, although the exact numbers and dates may have changed relative to the image. <strong>Make sure you’re at the top of the page and that you did not scroll down.</strong> Before clicking on this link, look at the scrollbar in the upper right corner of your browser – it should be quite small. After looking at it and visualizing how large it is, click the big XRP-WPILib link. <strong>It may appear as though nothing on your screen has changed.</strong></p>,
         image: <img src='./images/lesson1_4b.png' />
       },
-      30: {
+      28: {
         actionType: ActionType.Search,
         content: <p>4c. After clicking on the link, check your scrollbar again. It should now be larger.</p>,
         image: <img src='./images/lesson1_4c.png' />
       },
+      29: {
+        actionType: ActionType.Code,
+        content: <p>4d. If the scrollbar grew in size <strong>and</strong> the XRP-WPILib link stayed the same, you’re on the right path. If the numbers in the XRP-WPILib link changed after you clicked the link, then go back and make sure you’re scrolled to the top of the page before you click the link. But if it stayed the same, you’re good to go. Now scroll down to the bottom of this page and you’ll see a list of files. Click the xrp-wpilib-firmware file. Again, the numbers may be slightly different on your screen, compared to the image below:</p>,
+        image: <img src='./images/lesson1_4d.png' />
+      },
+      30: {
+        actionType: ActionType.Code,
+        content: <p>4e. Once you’ve downloaded this image file, go back to the WPILib documentation, to the section titled “Imaging your XRP”: <a href='https://docs.wpilib.org/en/stable/docs/xrp-robot/hardware-and-imaging.html' about='_blank'>https://docs.wpilib.org/en/stable/docs/xrp-robot/hardware-and-imaging.html.html</a></p>,
+      },
       31: {
         actionType: ActionType.Code,
-        content: <p>4d. If the scrollbar grew in size <strong>and</strong> the WPILibPi link stayed the same, you’re on the right path. If the numbers in the WPILibPi link changed after you clicked the link, then go back and make sure you’re scrolled to the top of the page before you click the link. But if it stayed the same, you’re good to go. Now scroll down to the bottom of this page and you’ll see a list of files. Click the WPILibPi_image file that is suffixed with “-XRP”. Again, the numbers may be slightly different on your screen, compared to the image below:</p>,
-        image: <img src='./images/lesson1_4d.png' />
+        content: <p>4f. Follow steps 2 through 6 under the "Imaging" subheading exactly as they are written. The file referenced in step 5 is the xrp-wpilib-firmware file you just downloaded.</p>
       },
       32: {
         actionType: ActionType.Code,
-        content: <p>4e. Once you’ve downloaded this zip file, go back to the WPILib documentation, on the page called “Imaging your XRP”: <a href='https://docs.wpilib.org/en/stable/docs/XRProbot/imaging-XRP.html'>https://docs.wpilib.org/en/stable/docs/XRProbot/imaging-XRP.html</a></p>,
+        content: <p>4g. Now you can connect to your XRP wirelessly the same way you would connect to any other wifi network on your computer. Unplug the robot from your computer then flip the power switch to "on". After a few seconds, a new network should pop up called "XRP-" followed by a number ID. Use the password "xrp-wpilib" to connect. To confirm that you have established a connection, open this webpage: <a href='http://192.168.42.1:5000' about='_blank'>http://192.168.42.1:5000</a>. If it loads, you were successful!</p>,
       },
       33: {
-        actionType: ActionType.Code,
-        content: <p>4f. Under the heading “Imaging”, there is a link for a WPILibPi Installation guide. Click that link:</p>,
-        image: <img src='./images/lesson1_4f.png' />
-      },
-      34: {
-        actionType: ActionType.Code,
-        content: <p>4g. On this new page, you can ignore the first link to a WPILibPi repository – that’s where you just were, and what you just downloaded. Read through the instructions and you’ll get to the heading “Copy the image to your MicroSD card”. Then you’ll see a link to installing a program called Etcher. Follow that link:</p>,
-        image: <img src='./images/lesson1_4g.png' />
-      },
-      35: {
-        actionType: ActionType.Code,
-        content: <p>4h. On this page, scroll down to the heading “Get your assets” and select the proper download for your operation system:</p>,
-        image: <img src='./images/lesson1_4h.png' />
-      },
-      36: {
-        actionType: ActionType.Code,
-        content: <p>4i. When you’re done downloading Etcher, head back to the imaging page in the WPILib documentation: <a href='https://docs.wpilib.org/en/stable/docs/software/visionprocessing/wpilibpi/installing-the-image-to-your-microsd-card.html'>https://docs.wpilib.org/en/stable/docs/software/visionprocessing/wpilibpi/installing-the-image-to-your-microsd-card.html</a></p>,
-      },
-      37: {
-        actionType: ActionType.Code,
-        content: <p>4j. Follow the instructions on this page where you left. It explains how to flash the MicroSD card with the image using Etcher. Note how it states: “Expect the process to take about 3 minutes on a fairly fast laptop.” If the flashing process happens very quickly and does not take a couple minutes, it did not flash correctly, but Etcher may still say that the flash is complete. If this happens to you, double check that you selected your downloaded zip file (do NOT unzip it first), and check that you selected your MicroSD card as the target. When it flashes correctly, it will go through a few different phases. First, decompressing. Then it will pause for a moment. Then, flashing, then validating, then finishing, where again it will pause for a moment. You can refer to the images below – click “Flash from file”, select the zipped image, select the target as your SD card, wait for it to finish, and then it should show the “Flash Complete!” Message after flashing successfully.</p>,
-        image: <img src='./images/lesson1_4j.png' />
-      },
-      38: {
-        actionType: ActionType.Code,
-        content: <p>4k. After you’ve successfully flashed the SD card, head back to this page: <a href='https://docs.wpilib.org/en/stable/docs/software/vision-processing/wpilibpi/installingthe-image-to-your-microsd-card.html'>https://docs.wpilib.org/en/stable/docs/software/vision-processing/wpilibpi/installingthe-image-to-your-microsd-card.html</a> and scroll down to the bottom, to the “Testing the Raspberry PI” section, and continue following the steps.</p>,
-      },
-      39: {
-        actionType: ActionType.Code,
-        content: <p>4l. For step 2, plug an ethernet cable directly from your computer into the XRP and navigate to the URL provided.</p>,
-      },
-      40: {
-        actionType: ActionType.Code,
-        content: <p>4m. Finish completing the steps on this page and click “Next”.</p>,
-      },
-      41: {
-        actionType: ActionType.Code,
-        content: <p>4n. After clicking next, you get a long page with a lot of info. You can ignore a lot of this info, although you can read it if you’re interested. Read from the start of the page up until the “System status” heading, at which point you can stop if you want.</p>,
-      },
-      42: {
-        actionType: ActionType.Code,
-        content: <p>4o. In the web interface, navigate to “Network Settings”. Click “Writable” at the top. On this page, you can set the name of your XRP’s wifi network if you want to in the SSID field. You can also leave it as WPILibPi if you want to, but if you’re in a class or lab with other people you might want to choose something unique. You can also enter a wifi security code in the WPA2 Passphrase field if you want.</p>,
-      },
-      43: {
-        actionType: ActionType.Code,
-        content: <p>4p. Lastly, click on the XRP tab, scroll down to the “IMU Calibration” section, read the instructions (lay the XRP on a flat surface and don’t touch it while calibrating), and click “Calibrate Gyro”. When you’re done, click the “Read-Only” button at the top.</p>,
-        image: <img src='./images/lesson1_4p.png' />
-      },
-      44: {
-        actionType: ActionType.Code,
-        content: <p>4q. You’re now done with the network configuration. You can unplug the ethernet cable. Now you can connect to your XRP wirelessly the same way you would connect to any other wifi network on your computer. The network name will be whatever you set it to, or if you did not change it, it will be whichever network starts with “WPILibPi”. There are a couple things to note about connecting to the XRP over wifi. First, when you do so, you will disconnect from any other wifi networks you’re connected to, meaning you will probably lose internet access if you’re connected to your internet over wifi. You can maintain internet access and connect to the XRP at the same time if you connect to your internet with an ethernet cable, but if you’re not connecting to the internet with a cable, be prepared to lose access. Third, sometimes on Windows the network connection screen might look like the first image below while you are connected. If your screen sits with scrolling white dots, you’re probably connected after a few seconds. It might also say “No Internet” (second image), while in reality, you’re still connected to the XRP – you just don’t have access to the internet, because your XRP is just a robot, not a router that connects you to the outside world like you’re usually connected to with wifi.</p>,
+        actionType: ActionType.Read,
+        content: <p>There are a couple things to note about connecting to the XRP over wifi. First, when you do so, you will disconnect from any other wifi networks you’re connected to, meaning you will probably lose internet access if you’re connected to your internet over wifi. You can maintain internet access and connect to the XRP at the same time if you connect to your internet with an ethernet cable, but if you’re not connecting to the internet with a cable, be prepared to lose access. Third, sometimes on Windows the network connection screen might look like the first image below while you are connected. If your screen sits with scrolling white dots, you’re probably connected after a few seconds. It might also say “No Internet” (second image), while in reality, you’re still connected to the XRP – you just don’t have access to the internet, because your XRP is just a robot, not a router that connects you to the outside world like you’re usually connected to with wifi.</p>,
         image: <img src='./images/lesson1_4q.png' />,
         more_images: <img src='./images/lesson1_4q1.png' />,
       },
-      45: {
+      34: {
         actionType: ActionType.Read,
         content: <p>Congratulations! You’re finally done setting up your XRP. It’s time to make it move!</p>
       }
     },
     'Part 2 - Running Your First Program': {
-      46: {
+      35: {
         actionType: ActionType.Code,
-        content: <p>Navigate to this page in your browser: <a href='https://docs.wpilib.org/en/stable/docs/romi-robot/programming-romi.html'>https://docs.wpilib.org/en/stable/docs/romi-robot/programming-romi.html</a> and open VSCode. Make sure you’re connected to your XRP through your wifi network.</p>
+        content: <p>Navigate to this page in your browser: <a href='https://docs.wpilib.org/en/stable/docs/xrp-robot/programming-xrp.html' about='_blank'>https://docs.wpilib.org/en/stable/docs/xrp-robot/programming-xrp.html</a> and open VSCode. Make sure you’re connected to your XRP through your wifi network.</p>
       },
-      47: {
+      36: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson1_31.png' />,
         content: <p>Follow the steps in the linked page all the way to the end. There are a couple items that you’ll need to specify that are not covered by the linked page. First, when it asks you to select a language, pick Java (as shown below). Head to the next screen on this interactive course before moving on.</p>
       },
-      48: {
+      37: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson1_32.png' />,
         content: <p>For the “Base Folder” field, you can choose whatever you want in your filesystem, but it might be a good idea to create a folder called “Development” in an easy-accessible location, where you put all your XRP projects. For the project name, you can again enter whatever you want. “ExampleProgram” might be a good name for your first project. Leave the “Create a new folder?” checkbox checked. For “Team Number”, if you belong to an FRC team, you can enter your team’s number. If you do not, or you don’t know what an FRC team is, you can enter “0000”. Do not check the “Enable Desktop Support” checkbox. Pictured below is an example. When you're finished with this, head to the next screen on this interactive course.</p>
       },
-      49: {
+      38: {
         actionType: ActionType.Code,
         content: <p>Back on the “Programming the XRP” webpage, you can ignore the paragraph right near the end that says “If you changed the XRP network settings...”. This means the last thing you’ll do in the instructions is press F5, which will deploy the example project. Go ahead and do this! If when you press F5 you get any sort of build error (you will see red text near the bottom of your screen saying build failed), try rebooting VSCode and your XRP, re-connecting to your XRP’s wifi (remember that will take a minute for the wifi network to pop up), and deploying again. Sometimes VSCode will fail to contact the XRP even if there is nothing wrong with your code, but rebooting solves this.</p>
       },
-      50: {
+      39: {
         actionType: ActionType.Search,
         image: <img src='./images/lesson1_34.png' />,
         content: <p>After you deploy your code, VSCode will bring up a new interface (called the “Robot Simulation” interface) that looks something like this. Note 1: Sometimes the Robot Simulation window will not open the first time you press F5. If this happens to you, simply click the red square to end your program, and press F5 again.</p>
       },
-      51: {
+      40: {
         actionType: ActionType.Search,
         image: <img src='./images/lesson1_35.png' />,
         content: <p>Note 2: If you have the FRC Driver Station application installed on your computer, you may not see the Robot State box in the upper left of the image below. Instead, you will use the FRC Driver Station app to enable/disable your robot and select modes. If you don’t know what the FRC Driver Station is, don’t worry about this note.</p>
       },
-      52: {
+      41: {
         actionType: ActionType.Code,
         content: <p>This interface lets you control the XRP and see various output from the onboard sensors. But what we’re most interested in right now is making it move. The simplest way to do this with the sample program is to enable its autonomous program. Enabling the autonomous program will cause the XRP to drive forward about ten inches, turn around, drive back to its original location, and then turn around again. Make sure you have the XRP somewhere where it can safely do this (not at the edge of a desk or table) and be ready to enable it. Look at the photo above, and find the “Robot State” box, in the upper left, highlighted in green. Here you will see a list of four robot states – Disabled, Autonomous, Teleoperated, and Test. As soon as you click Autonomous, the XRP will enable and immediately begin its autonomous routine. When you’re ready, give it a try! After the XRP finishes moving, click the Disabled option to disable it again. Although the XRP is lightweight and low power, making sure robots are disabled when not in direct use is a critical safety practice.</p>
       },
-      53: {
+      42: {
         actionType: ActionType.Code,
-        content: <p>Now that you’ve made the XRP move on its own, it’s time to try driving it yourself. If you look at the window called “System Joysticks”, highlighted in red, you will see any joysticks that you have plugged in to your computer. In the example, there is an Xbox controller plugged in, but you can use anything that your computer recognizes as a joystick. There’s an additional window called simply “Joysticks”, highlighted in yellow, and these are the joysticks that your code and XRP are looking at for input. You may not see any joysticks listed in this window. If that is the case, you can simply drag and drop your joysticks from the System Joysticks window, to the Joysticks window. In the example photo, the Xbox Controller has been dragged to joystick 0. Do likewise – drag whatever joystick you want to use as your controller to the 0 slot. If you have multiple joysticks plugged in to your computer, you may need to do some quick tests to figure out which one is which. How to do this is explained next.</p>
+        content: <p>Now that you’ve made the XRP move on its own, it’s time to try driving it yourself. If you look at the window called “System Joysticks”, highlighted in red on the last image, you will see any joysticks that you have plugged in to your computer. In the example, there is an Xbox controller plugged in, but you can use anything that your computer recognizes as a joystick. There’s an additional window called simply “Joysticks”, highlighted in yellow, and these are the joysticks that your code and XRP are looking at for input. You may not see any joysticks listed in this window. If that is the case, you can simply drag and drop your joysticks from the System Joysticks window, to the Joysticks window. In the example photo, the Xbox Controller has been dragged to joystick 0. Do likewise – drag whatever joystick you want to use as your controller to the 0 slot. If you have multiple joysticks plugged in to your computer, you may need to do some quick tests to figure out which one is which. How to do this is explained next.</p>
       },
-      54: {
+      43: {
         actionType: ActionType.Search,
         content: <p>After dragging your joystick so the Joysticks window, try moving your joystick around and pressing some buttons. You will see the yellow squares at the bottom of the Joysticks window fill/unfill as you press and release buttons, and you can see the axis values change in value as you move the sticks around. This is how you can test which joystick in the System Joysticks is which if you are not sure. If you have one joystick dragged to the joysticks window and pressing buttons/moving the sticks doesn’t change any of the values, you probably dragged a different stick.</p>
       },
-      55: {
+      44: {
         actionType: ActionType.Code,
         content: <p>Once you’ve gotten your joystick to register, and you’ve confirmed it’s in the Joystick[0] slot, you’re ready to enable your robot! Look back at the robot state box, and when you’re ready, click Teleoperated. This will enable the robot. Now you can start trying to drive it around! If you press various buttons and/or sticks on your joystick/controller, you should be able to make the robot move. However, it may or may not control as you expect. For example, by default, if you’re using an Xbox controller, the left joystick will control the robot moving forward and backward, but the left trigger will control turning, and you’ll only be able to turn it one direction since the left trigger can only register positive values (as opposed to a joystick, which can register positive or negative values, e.g. if you push it forward or backward.) Now disable the robot. Your first task for you to start programming will be to fix the controls so it can drive normally. If your robot does drive as expected, which could happen for some controllers, then you can still follow the lesson. You’ll simply change it to drive abnormally, and then fix it again.</p>
       }
     },
     'Ending the Executing Program': {
-      56: {
+      45: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson1_40.png' />,
         content: <p>After you press deploy your code, a small box with a few buttons will pop up in the top of VSCode. While this box is visible, you may not be able to deploy additional code to the XRP – VSCode may give you an error. When you want to deploy new code, simply click the red square in this box first, and then you can deploy your code:</p>
       }
     },
     'Fixing the Controls': {
-      57: {
+      46: {
         actionType: ActionType.Search,
         content: <p>As discussed above, you can look at the robot simulation interface, and see changes in the joystick section as you move the joysticks or press buttons. Decide which joystick axis you want to control turning. For example if you’re using an Xbox controller, this might be the left joystick being pushed left or right, or the right joystick being pushed left or right. If you’re using a single standalone joystick, you don’t have as many options. But either way, decide what you want, and then start pushing the joystick that way. On the joysticks interface you will see a value change. For example, it might move from 0 to 1 or -1 depending on which direction you push it. The important thing here is to note which axis is changing. The axes are labeled from 0 to 5 in brackets, like so: Axis[4]. Determine which axis is changing, and remember this number.</p>
       },
-      58: {
+      47: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson1_42.png' />,
         content: <p>Now let’s dig into the code. Back in VSCode, open the “Explorer” (highlighted in red, upper left, see the picture below) and then click on src, java, frc, robot, and then finally double click on RobotContainer.java to open it.</p>
       },
-      59: {
+      48: {
         actionType: ActionType.Search,
         image: <img src='./images/lesson1_43.png' />,
-        content: <p>If you’re brand new to programming, there is a lot to take in here – but don’t worry about that. We’ll discuss everything in time, but for now let’s get those controls fixed. Scroll down in RobotContainer.java until you see line number 95. The lines are numbered on the left side of the code. On line 95, you’ll see this:</p>
+        content: <p>If you’re brand new to programming, there is a lot to take in here – but don’t worry about that. We’ll discuss everything in time, but for now let’s get those controls fixed. Scroll down in RobotContainer.java until you see line number 97. The lines are numbered on the left side of the code. On line 97, you’ll see this:</p>
       },
-      60: {
+      49: {
         actionType: ActionType.Code,
-        content: <p>At the end of the line, you’ll see “m_controller.getRawAxis(2))”, highlighted in red above. This line sets which axes of the joystick are being used to control the robot. Change the 2 to whatever axis you identified when testing the controls. If your controls were already correct, try changing it to something else, following the next step, and then changing it back. Once you do this, you can press ctrl+s to save, and F5 to deploy your code to the XRP again. Once the code finishes deploying, you can enable it again and try out your new controls. If you put the right axis, you’ll be able to drive your robot comfortably! If the controls aren’t what you expected, double check your axes again when you push on them using the joysticks interface, and make sure you changed the correct value in the code. Now that you have your XRP driving around, have some fun with it! You’ve taken your first steps into writing code and you already have a robot driving around.</p>
+        content: <p>At the end of the line, you’ll see “-m_controller.getRawAxis(2))”, highlighted in red in the previous image. This line sets which axes of the joystick are being used to control the robot. Change the 2 to whatever axis you identified when testing the controls. If your controls were already correct, try changing it to something else, following the next step, and then changing it back. Once you do this, you can press ctrl+s to save, and F5 to deploy your code to the XRP again. Once the code finishes deploying, you can enable it again and try out your new controls. If you put the right axis, you’ll be able to drive your robot comfortably! If the controls aren’t what you expected, double check your axes again when you push on them using the joysticks interface, and make sure you changed the correct value in the code. Now that you have your XRP driving around, have some fun with it! You’ve taken your first steps into writing code and you already have a robot driving around.</p>
       }
     }
   },
