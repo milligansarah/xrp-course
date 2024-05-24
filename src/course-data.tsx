@@ -352,7 +352,7 @@ const data: CourseData = {
     }
   },
   'Lesson 3 - Methods, Classes, and Objects': {
-    'totalParagraphs': 22,
+    'totalParagraphs': 21,
     'Introduction': {
       0: {
         content: <p>In Lesson 2 you learned what methods are, but we only scratched the surface. In this lesson we’ll introduce two more critical concepts – classes and objects. We’ll learn how to utilize the buttons on your joystick and make the on-board lights on the XRP turn on and off. Start off by creating a new XRPReference project called “Lights”.</p>,
@@ -411,22 +411,21 @@ const data: CourseData = {
         actionType: ActionType.Code,
         image: <img src='./images/lesson3_12.png' />,
         content: <div>
-          <p>3. Put your cursor inside the parentheses on line 14 (NOT the curly bracket at the end) and type “XRPOnBoardIO io”. Then go to the end of line 15 (the next line), press enter, and add two lines of code. These lines initialize the XRPOnBoardIO object.</p>
+          <p>3. Put your cursor inside the parentheses on line 14 (NOT the curly bracket at the end) and type “XRPOnBoardIO io”. Then go to the end of line 15 (the next line), press enter, and add one line of code. This line initializes the XRPOnBoardIO object.</p>
           <ol type='a'>
             <li>m_io = io;</li>
-            <li>addRequirements(io);</li>
-            <li>When you’re done with these steps, lines 10-19 should look like this:</li>
+            <li>When you’re done with these steps, lines 10-18 should look like this:</li>
           </ol>
         </div>
       },
       13: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson3_13.png' />,
-        content: <p>4. Move your cursor to inside the curly brackets on line 26 (this time NOT the parentheses.) Press enter and then add a line of code by typing “m_io.setGreenLed(true);”. Your execute method should now look like this:</p>
+        content: <p>4. Move your cursor to inside the curly brackets on line 25 (this time NOT the parentheses.) Press enter and then add a line of code by typing “m_io.setLed(true);”. Your execute method should now look like this:</p>
       },
       14: {
         actionType: ActionType.Code,
-        content: <p>Congratulations! You’ve now created your first robot command. Unfortunately, there’s no way to activate this command yet, but we’ll add that in a moment. First, let’s create the sister command that turns the LED off. Follow the steps above again to create another command in the same folder, but call it “TurnLedOff”. Follow all the same steps to add the code to the new command, but when you get to line 27 where you do m_io.setGreenLed(true);, use “false” instead of “true”. Once you’ve created the second command, it’s time to hook them up to a joystick button.</p>
+        content: <p>Congratulations! You’ve now created your first robot command. Unfortunately, there’s no way to activate this command yet, but we’ll add that in a moment. First, let’s create the sister command that turns the LED off. Follow the steps above again to create another command in the same folder, but call it “TurnLedOff”. Follow all the same steps to add the code to the new command, but when you get to line 27 where you do m_io.setLed(true);, use “false” instead of “true”. Once you’ve created the second command, it’s time to hook them up to a joystick button.</p>
       },
       15: {
         actionType: ActionType.Code,
@@ -436,7 +435,7 @@ const data: CourseData = {
       16: {
         actionType: ActionType.Code,
         image: <img src='./images/lesson3_16.png' />,
-        content: <p>Now go to RobotContainer.java, put your cursor at the end of line 65, press enter twice, and type out code to match the image below. However, where there are red boxes, change the number 1 to whatever number your button is. These lines of code create a “JoystickButton” object and bind the commands you created to execute when you press and release the button, respectively. You’ll see the red underlines indicating you have errors, and we’ll fix those next. Note that it’s possible that VSCode will fix the red underline under “JoystickButton” on its own. If it does so, that red underline will go away, and all the line numbers in your code will increase by one relative to the image below.</p>
+        content: <p>Now go to RobotContainer.java, put your cursor at the end of line 57, press enter twice, and type out code to match the image below. However, where there are red boxes, change the number 1 to whatever number your button is. These lines of code create a “JoystickButton” object and bind the commands you created to execute when you press and release the button, respectively. You’ll see the red underlines indicating you have errors, and we’ll fix those next. Note that it’s possible that VSCode will fix the red underline under “JoystickButton” on its own. If it does so, that red underline will go away, and all the line numbers in your code will increase by one relative to the image below.</p>
       },
       17: {
         actionType: ActionType.Code,
@@ -450,14 +449,9 @@ const data: CourseData = {
       },
       19: {
         actionType: ActionType.Code,
-        image: <img src='./images/lesson3_19.png' />,
-        content: <p>You’re now almost done. The last thing to do is to tell the XRP to use the green LED as an output device. The way the XRP is physically constructed, its green and red LEDs use “digital input/output”, or DIO, ports, which can be used for either input or output. Using an LED is an example of output – the XRP will output the light. An example of input would be if you plugged a button into the DIO port, which would let the XRP receive input. We will not cover that in this course. By default, when you create a XRPReference project, both the red and green LED DIO ports are set to receive input, instead of output, so you’ll need to change that. Head to RobotContainer.java, go to line 34, and change the first instance of the word “INPUT” to “OUTPUT”. The second “INPUT” refers to the red LED, which you’re not using in this lesson. Example:</p>
-      },
-      20: {
-        actionType: ActionType.Code,
         content: <p>Now you’re done! You can deploy your code to your XRP, enable it, and try pressing your button. You will notice that a light near the back of the XRP lights up while you’re holding the button down, and turns off when you release it.</p>
       },
-      21: {
+      20: {
         actionType: ActionType.Read,
         content: <p>Congratulations on finishing the first three lessons. You’ve now learned a lot of the basics of Java and robot programming. There’s still a lot to learn but if you’ve made it this far, you’re doing well and you should have a basic understanding of how software can be used to effect the behavior of the robot. Over the next lessons we’ll build on that understanding, which will increase both your skills and your confidence in writing your own programs.</p>
       }
