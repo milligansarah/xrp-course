@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/xrp-course/static/css/main.aa4ccd03.css",
-    "main.js": "/xrp-course/static/js/main.3fc4a2a6.js",
+    "main.js": "/xrp-course/static/js/main.48f6f0f6.js",
     "index.html": "/xrp-course/index.html",
     "main.aa4ccd03.css.map": "/xrp-course/static/css/main.aa4ccd03.css.map",
-    "main.3fc4a2a6.js.map": "/xrp-course/static/js/main.3fc4a2a6.js.map"
+    "main.48f6f0f6.js.map": "/xrp-course/static/js/main.48f6f0f6.js.map"
   },
   "entrypoints": [
     "static/css/main.aa4ccd03.css",
-    "static/js/main.3fc4a2a6.js"
+    "static/js/main.48f6f0f6.js"
   ]
 }
