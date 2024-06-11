@@ -27,7 +27,7 @@
         "Accessing Class Data": {
             "5": {
                 "actionType": "Code",
-                "content": "<div><p>To do this project, we’re going to need to access a few variables that, by default, we can’t \naccess. We’ll talk more about this in the second part of the object-oriented programming deep dive, \nnext lesson. There are reasons why these variables should not be accessible to us, but for this project, \nwe’re going to make them accessible anyway. Follow these steps to get everything setup for this project: \n</p><li>1. Create a new XRPReference project like you’ve done a couple times already.</li><li>2. In RobotContainer.java on line 31, there are two instances of the word “INPUT”. Change these both to “OUTPUT”. This tells the XRP to use the red and green LED lights as output. \n</li><li>3. In Drivetrain.java on line 32, change the first word of the line, “private”, to “public”.</li></ol></div>"
+                "content": "<div><p>To do this project, we’re going to need to access a few variables that, by default, we can’t \naccess. We’ll talk more about this in the second part of the object-oriented programming deep dive, \nnext lesson. There are reasons why these variables should not be accessible to us, but for this project, \nwe’re going to make them accessible anyway. Follow these steps to get everything setup for this project: \n</p><ol><li>Create a new XRPReference project like you’ve done a couple times already.</li><li>In Drivetrain.java on line 37, change the first word of the line, “private”, to “public”.</li></ol></div>"
             },
             "6": {
                 "actionType": "Code",
