@@ -377,7 +377,7 @@
             },
             "5": {
                 "actionType": "Search",
-                "content": "<p>Line 10 declares the class, and the “extends CommandBase” text specifies that this class is a \ncommand. We’ll talk about this in a future lesson – for now you can just recognize it and understand \nthat it means it’s a command. Then there are three class fields declared – the Drivetrain system to \noperate upon, and the speed and distance with which to drive. \n</p>",
+                "content": "<p>Line 10 declares the class, and the “extends Command” text specifies that this class is a \ncommand. We’ll talk about this in a future lesson – for now you can just recognize it and understand \nthat it means it’s a command. Then there are three class fields declared – the Drivetrain system to \noperate upon, and the speed and distance with which to drive. \n</p>",
                 "image": "<img src=\"./images/lesson10_0.png\"/>"
             },
             "6": {
@@ -417,7 +417,7 @@
             },
             "13": {
                 "actionType": "Search",
-                "content": "<p> \nLine 10 of AutonomousDistance declares the class and you’ll see that it says “extends \nSequentialCommandGroup”. Just like when we investigated DriveDistance, we’ll ignore what the word \n“extends” means just for now, but just like in DriveDistance “extends CommandBase” meant that \nDriveDistance was a command, “extends SequentialCommandGroup” in AutonomousDistance means \nthat AutonomousDistance is a sequential command group. That is a lot of words, so just to repeat: the \ntext “extends SequentialCommandGroup” means that the class is a sequential command group. \n</p>"
+                "content": "<p> \nLine 10 of AutonomousDistance declares the class and you’ll see that it says “extends \nSequentialCommandGroup”. Just like when we investigated DriveDistance, we’ll ignore what the word \n“extends” means just for now, but just like in DriveDistance “extends Command” meant that \nDriveDistance was a command, “extends SequentialCommandGroup” in AutonomousDistance means \nthat AutonomousDistance is a sequential command group. That is a lot of words, so just to repeat: the \ntext “extends SequentialCommandGroup” means that the class is a sequential command group. \n</p>"
             },
             "14": {
                 "actionType": "Search",
@@ -632,7 +632,7 @@
         "Examples in the XRPReference Project": {
             "7": {
                 "actionType": "Search",
-                "content": "<p>Now that you’ve learned more about these concepts, let’s see how they apply to our robot \ncode. Open a default XRPReference project, open DriveDistance.java, and look at line 10. You’ll see the \ntext “extends CommandBase”. You learned before that the extends keyword is how Java knows your \ncommand is actually a command, and now you understand why. CommandBase is a command, so any \nclass that extends CommandBase is also a command. A command is defined as having the four methods \nwe’ve talked about – initialize, execute, isFinished, and end – so DriveDistance has these methods, and \nthey’re tagged with @Override as explained in the reading. We’ll talk about how a command is defined \nas having these four methods in an upcoming lesson. \n</p>"
+                "content": "<p>Now that you’ve learned more about these concepts, let’s see how they apply to our robot \ncode. Open a default XRPReference project, open DriveDistance.java, and look at line 10. You’ll see the \ntext “extends Command”. You learned before that the extends keyword is how Java knows your \ncommand is actually a command, and now you understand why. Command is a command, so any \nclass that extends Command is also a command. A command is defined as having the four methods \nwe’ve talked about – initialize, execute, isFinished, and end – so DriveDistance has these methods, and \nthey’re tagged with @Override as explained in the reading. We’ll talk about how a command is defined \nas having these four methods in an upcoming lesson. \n</p>"
             },
             "8": {
                 "actionType": "Search",
@@ -1193,7 +1193,7 @@
             },
             "6": {
                 "actionType": "Search",
-                "content": "<p> \nBoth the ParallelCommandGroup and SequentialCommandGroup classes extend \nCommandGroupBase, meaning that both of these types of objects are also CommandGroupBase objects. \nIf you F12 into CommandGroupBase, you’ll that it extends CommandBase and implements Command. \nImplementing Command is the key thing to notice here. Anything that implements Command can be \nused as a Command, because implementing Command tells Java that the class has the critical Command \nmethods such as initialize, execute, etc. Since all the different types of command groups extend \nCommandBase, and CommandBase implements Command, all the command groups also implement \nCommand, meaning that all command groups can also function as Commands. This is important because \nthis means that when you’re adding a command to a command group, you can add a command group \ninstead of a basic command. \n</p>"
+                "content": "<p> \nBoth the ParallelCommandGroup and SequentialCommandGroup classes extend \nCommandGroupBase, meaning that both of these types of objects are also CommandGroupBase objects. \nIf you F12 into CommandGroupBase, you’ll that it extends Command and implements Command. \nImplementing Command is the key thing to notice here. Anything that implements Command can be \nused as a Command, because implementing Command tells Java that the class has the critical Command \nmethods such as initialize, execute, etc. Since all the different types of command groups extend \nCommand, and Command implements Command, all the command groups also implement \nCommand, meaning that all command groups can also function as Commands. This is important because \nthis means that when you’re adding a command to a command group, you can add a command group \ninstead of a basic command. \n</p>"
             },
             "7": {
                 "actionType": "Read",
