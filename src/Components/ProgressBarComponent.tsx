@@ -9,6 +9,16 @@ interface ProgressBarProps {
 }
 
 function ProgressBarComponent(props: ProgressBarProps) {
+    document.onkeydown = function(e) {
+        console.log(e.key)
+        if (e.key == 'ArrowLeft') {
+          window.location.href = getBackLink()
+        }
+        else if (e.key == 'ArrowRight') {
+          window.location.href = getNextLink()
+        }
+    };
+
     console.log(props.paragraphIndex + ' total Pragraphs: ' + props.totalParagraphs + ' current lesson: ' + props.currentLesson);
     function getBackLink() : string {
       if (props.paragraphIndex == 0) {
